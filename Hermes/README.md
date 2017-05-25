@@ -35,7 +35,7 @@ public class Startup
 }
 ```
 
-For more information about methods and classes look at documentation located at doc directory.
+For more information about methods and classes look at documentation located at *doc* directory or [click here](https://miroslavpokorny.github.io/Hermes/Hermes/doc/).
 
 ## Supported servers
 The library was tested on Windows 10 (1607 Anniversary Update) and IIS Express 10.

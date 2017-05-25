@@ -12,7 +12,7 @@ TypeScript/JavaScript client for Hermes communication library. With support for 
 * sendText(data: string, id?: number, mimeType?: string): void
 * sendVideo(data: Uint8Array, id?: number, mimeType?: string): void
 
-For more info look at documentation at *doc* directory.
+For more info look at documentation at *doc* directory or [click here](https://miroslavpokorny.github.io/Hermes/HermesJS/doc/).
 
 ### Events
 *HermesJS.Connection.HermesConnection* class support multiple events registred by *addEventListener* method. Available evetns are in table below.

@@ -12,3 +12,8 @@ The solution is divided into three projects:
 
 Hermes and HermesJS projects are licensed under [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 HermesSample project is licensed under [Unlicense](http://unlicense.org/)
+
+### Source code documentation
+
+* [Hermes](https://miroslavpokorny.github.io/Hermes/Hermes/doc/)
+* [HermesJS](https://miroslavpokorny.github.io/Hermes/HermesJS/doc/)
