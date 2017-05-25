@@ -1,0 +1,462 @@
+﻿@{
+    ViewBag.Title = "Hermes ManyToMany";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Hermes ManyToMany</h1>
+
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group" role="group">
+        <button id="button-clear-canvas" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Clear canvas</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="button-colors" type="button" class="btn btn-default">Colors</button>
+        <button type="button" class="btn btn-default" onclick="showModalCommunicationLink()"><span class="glyphicon glyphicon-link"></span> Show communication link</button>
+    </div>
+    <div class="btn-group" data-toggle="buttons" id="shape">
+        <label class="btn btn-default active">
+            <input type="radio" name="shape" id="radio-shape-line" autocomplete="off" checked value="1"> Line
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="shape" id="radio-shape-rectangle" autocomplete="off" value="2"> Rectangle
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="shape" id="radio-shape-circle" autocomplete="off" value="3"> Circle
+        </label>
+    </div>
+    <div class="btn-group" data-toggle="buttons" id="mode">
+        <label class="btn btn-default active">
+            <input type="radio" name="mode" id="radio-mode-outline" autocomplete="off" checked value="1"> Outline
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="mode" id="radio-mode-fill" autocomplete="off" value="2"> Fill
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="mode" id="radio-mode-outline-fill" autocomplete="off" value="3"> Outline and fill
+        </label>
+    </div>
+</div>
+<div style="position: relative;">
+    <canvas id="draw-canvas" width="800" height="800" style="border: solid black 1px;" ></canvas>
+    <canvas id="preview-canvas" width="800" height="800" style="position: absolute; left: 1px; top: 1px; "></canvas>
+    <canvas id="cursor-canvas" width="800" height="800" style="position: absolute; left: 1px; top: 1px; "></canvas>
+</div>
+
+
+<!--MODALS-->
+<div class="modal fade" id="modal-communication-link" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModal-label">Communication link</h4>
+            </div>
+            <div class="modal-body">
+                <p><a id="a-modal-communication-link"></a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-disconnect" tabindex="-1" role="dialog" aria-labelledby="modal-disconnect-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-disconnect-label">Disconnected!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Connection has disconnected! You lose connection with server, or streaming has ended.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-colors" tabindex="-1" role="dialog" aria-labelledby="modal-colors-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-colors-label">Set colors</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs" role="tablist" id="modal-colors-tab-nav">
+                    <li role="presentation" class="active"><a href="#set-outline-color" aria-controls="home" role="tab" data-toggle="tab">Outline color</a></li>
+                    <li role="presentation"><a href="#set-fill-color" aria-controls="profile" role="tab" data-toggle="tab">Fill color</a></li>
+                </ul>
+                <style>
+                    .color-preview {
+                        width: 100px;
+                        height: 100px;
+                    }
+                </style>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="set-outline-color">
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="outline-red">Red: </label>
+                            <input type="range" id="range-outline-red" min="0" max="255" step="1" value="0" style="display: inline-block;"/>
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="outline-red"/>
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="outline-green">Green: </label>
+                            <input type="range" id="range-outline-green" min="0" max="255" step="1" value="0" style="display: inline-block;"/>
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="outline-green" />
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="outline-blue">Blue: </label>
+                            <input type="range" id="range-outline-blue" min="0" max="255" step="1" value="0" style="display: inline-block;"/>
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="outline-blue" />
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="outline-alpha">Alpha: </label>
+                            <input type="range" id="range-outline-alpha" min="0" max="1" step="0.01" value="1" style="display: inline-block;"/>
+                            <input type="number" max="1" min="0" step="0.01" class="form-control" value="1" id="outline-alpha" />
+                        </div>
+                        <div id="outline-preview" class="color-preview" style="background-color: black"></div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="set-fill-color">
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="fill-red">Red: </label>
+                            <input type="range" id="range-fill-red" min="0" max="255" step="1" value="0" style="display: inline-block;" />
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="fill-red" />
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="fill-green">Green: </label>
+                            <input type="range" id="range-fill-green" min="0" max="255" step="1" value="0" style="display: inline-block;" />
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="fill-green" />
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="fill-blue">Blue: </label>
+                            <input type="range" id="range-fill-blue" min="0" max="255" step="1" value="0" style="display: inline-block;" />
+                            <input type="number" max="255" min="0" step="1" class="form-control" value="0" id="fill-blue" />
+                        </div>
+                        <div class="form-inline form-group">
+                            <label class="control-label" for="fill-alpha">Alpha: </label>
+                            <input type="range" id="range-fill-alpha" min="0" max="1" step="0.01" value="1" style="display: inline-block;" />
+                            <input type="number" max="1" min="0" step="0.01" class="form-control" value="1" id="fill-alpha" />
+                        </div>
+                        <div id="fill-preview" class="color-preview" style="background-color: black"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts
+{
+    @if (ViewBag.SessionId != null)
+    {
+        <script>
+            var SESSION_ID = "@ViewBag.SessionId";
+        </script>
+    }
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <!--POLYFILL required for EDGE browser-->
+    <script src="~/Scripts/text-encoder.js"></script>
+    <script src="~/Scripts/HermesJS.js"></script>
+    <script type="text/javascript">
+        $("#modal-colors-tab-nav").click(function(e) {
+            e.preventDefault();
+            $(this).tab("show");
+        });
+        $("#button-colors").click(function () {
+            $("#modal-colors").modal("show");
+            colorPreview("outline");
+            colorPreview("fill");
+        });
+
+        function createEventsColor() {
+            var a = ["outline", "fill"];
+            var b = ["red", "green", "blue", "alpha"];
+            for (var i = 0; i < a.length; i++) {
+                for (var j = 0; j < b.length; j++) {
+                    addChangeEventsForColor(a[i], b[j]);
+                }
+            }
+        }
+
+        createEventsColor();
+
+        function addChangeEventsForColor(type, color) {
+            $("#" + type + "-" + color).change(function () {
+                $("#range-" + type + "-" + color).val($(this).val());
+                colorPreview(type);
+            });
+            $("#range-" + type + "-" + color).change(function () {
+                $("#" + type + "-" + color).val($(this).val());
+                colorPreview(type);
+            });
+        }
+
+        function colorPreview(type) {
+            $("#" + type + "-preview").attr("style", "background-color: " + getRgba(type) + ";");
+        }
+
+        function getRgba(type) {
+            var color = [];
+            color[0] = Number($("#" + type + "-red").val());
+            color[1] = Number($("#" + type + "-green").val());
+            color[2] = Number($("#" + type + "-blue").val());
+            color[3] = Number($("#" + type + "-alpha").val());
+            return "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + color[3] + ")";
+        }
+
+        function getRgbaInt(type) {
+            var color = (Number($("#" + type + "-red").val()) << 24) |
+                (Number($("#" + type + "-green").val()) << 16) |
+                (Number($("#" + type + "-blue").val()) << 8) |
+                Math.round(Number($("#" + type + "-alpha").val() * 255));
+            return color;
+        }
+
+        function intToRgba(value) {
+            var color = [];
+            color[0] = value >>> 24;
+            color[1] = (value >>> 16) & 0xff;
+            color[2] = (value >>> 8) & 0xff;
+            color[3] = (value & 0xff) / 255;
+            return "rgba(" + color[0] + "," + color[1] + "," + color[2] + "," + color[3] + ")";
+        }
+
+        function showModalCommunicationLink() {
+            $('#modal-communication-link').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $("#modal-communication-link").modal("show");
+        }
+
+        function main() {
+            var offset = {
+                type: 0,
+                p1x: 1,
+                p1y: 3,
+                p2x: 5,
+                p2y: 7,
+                outlineColor: 9,
+                fillColor: 13
+            }
+            var cursorCanvas = $("#cursor-canvas")[0].getContext("2d");
+            var previewCanvas = $("#preview-canvas")[0].getContext("2d");
+            var drawCanvas = $("#draw-canvas")[0].getContext("2d");
+
+            var cursors = [];
+            var cursorsIds = [];
+            var mouseDown = { x: 0, y: 0 };
+            var mouseNow = { x: 0, y: 0 };
+            var mouseUp = { x: 0, y: 0 };
+            var mouseSendedPosition = { x: 0, y: 0 };
+            var isMousePress = false;
+            var colors = [
+                "White", "Silver", "Gray", "Black", "Red", "Maroon", "Yellow", "Olive", "Lime", "Green", "Aqua", "Teal",
+                "Blue", "Navy", "Fuchsia", "Purple"
+            ];
+            var colori = Math.floor(Math.random() * colors.length);
+
+            function getPosition(me) {
+                var position = {};
+                position.x = me.originalEvent.layerX;
+                position.y = me.originalEvent.layerY;
+                return position;
+            }
+
+            function getMousePositionData(point) {
+                var data = new Uint8Array(5);
+                var dataView = new DataView(data.buffer);
+                dataView.setUint8(offset.type, 4);
+                dataView.setInt16(offset.p1x, point.x, true);
+                dataView.setInt16(offset.p1y, point.y, true);
+                return data;
+
+            }
+
+            function drawCursors() {
+                cursorCanvas.clearRect(0, 0, 800, 800);
+                cursorCanvas.strokeStyle = "black";
+                cursorsIds.forEach(function(value) {
+                    var p = cursors[value];
+                    cursorCanvas.fillStyle = cursors[value].color;
+                    cursorCanvas.beginPath();
+                    cursorCanvas.moveTo(p.x, p.y);
+                    cursorCanvas.lineTo(p.x, p.y + 16);
+                    cursorCanvas.lineTo(p.x + 4, p.y + 13);
+                    cursorCanvas.lineTo(p.x + 8, p.y + 21);
+                    cursorCanvas.lineTo(p.x + 10, p.y + 20);
+                    cursorCanvas.lineTo(p.x + 7, p.y + 11);
+                    cursorCanvas.lineTo(p.x + 11, p.y + 11);
+                    cursorCanvas.closePath();
+                    cursorCanvas.fill();
+                    cursorCanvas.stroke();
+                });
+            }
+
+            $("#cursor-canvas").mousemove(function(me) {
+                mouseNow = getPosition(me);
+                previewCanvas.clearRect(0, 0, 800, 800);
+                if (isMousePress) {
+                    drawElement(getData(mouseDown, mouseNow), previewCanvas);
+                }
+                
+            });
+
+            $("#cursor-canvas").mousedown(function(me) {
+                mouseDown = getPosition(me);
+                isMousePress = true;
+            });
+
+            $("#cursor-canvas").mouseup(function (me) {
+                mouseUp = getPosition(me);
+                isMousePress = false;
+                previewCanvas.clearRect(0, 0, 800, 800);
+                var data = getData(mouseDown, mouseUp);
+                connection.sendBinary(data);
+                drawElement(data, drawCanvas);
+            });
+            
+            function getData(p1, p2) {
+                var data = new Uint8Array(17);
+                var dataView = new DataView(data.buffer);
+                var mode = $('input[name=mode]:checked', '#mode').val();
+                dataView.setUint8(offset.type, Number($('input[name=shape]:checked', '#shape').val()));
+                dataView.setInt16(offset.p1x, p1.x, true);
+                dataView.setInt16(offset.p1y, p1.y, true);
+                dataView.setInt16(offset.p2x, p2.x, true);
+                dataView.setInt16(offset.p2y, p2.y, true);
+                switch (Number(mode)) {
+                    case 1:
+                        dataView.setInt32(offset.outlineColor, getRgbaInt("outline"), true);
+                        break;
+                    case 2:
+                        dataView.setInt32(offset.fillColor, getRgbaInt("fill"), true);
+                        break;
+                    case 3:
+                        dataView.setInt32(offset.outlineColor, getRgbaInt("outline"), true);
+                        dataView.setInt32(offset.fillColor, getRgbaInt("fill"), true);
+                        break;
+                }
+                return data;
+            }
+            
+            function drawElement(element, canvas) {
+                var dataView = new DataView(element.buffer, element.byteOffset);
+                canvas.strokeStyle = intToRgba(dataView.getUint32(offset.outlineColor, true));
+                canvas.fillStyle = intToRgba(dataView.getUint32(offset.fillColor, true));
+                var p1 = { x: dataView.getInt16(offset.p1x, true), y: dataView.getInt16(offset.p1y, true) };
+                var p2 = { x: dataView.getInt16(offset.p2x, true), y: dataView.getInt16(offset.p2y, true) };
+                switch (dataView.getInt8(offset.type)) {
+                    case 1:
+                        canvas.beginPath();
+                        canvas.moveTo(p1.x, p1.y);
+                        canvas.lineTo(p2.x, p2.y);
+                        canvas.stroke();
+                        canvas.fill();
+                        canvas.closePath();
+                        break;
+                    case 2:
+                        canvas.strokeRect(p1.x, p1.y, p2.x - p1.x, p2.y - p1.y);
+                        canvas.fillRect(p1.x, p1.y, p2.x - p1.x, p2.y - p1.y);
+                        break;
+                    case 3:
+                        canvas.beginPath();
+                        var radius = Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
+                        canvas.ellipse(p1.x, p1.y, radius, radius, 0, 0, 2 * Math.PI);
+                        canvas.stroke();
+                        canvas.fill();
+                        canvas.closePath();
+                        break;
+                };
+            }
+
+            function onDisconnect() {
+                $("#modal-disconnect").modal("show");
+            }
+
+            function setLinkModalCommunicationLink() {
+                var a = $("#a-modal-communication-link");
+                var url = window.location.protocol + "//" + window.location.host + "/ManyToMany/Index/" + connection.sessionId;
+                a.attr("href", url);
+                a.html(url);
+            }
+
+            function onReady(event) {
+                setLinkModalCommunicationLink();
+                $("#modal-communication-link").modal("hide");
+            }
+
+            function onWaiting(event) {
+                setLinkModalCommunicationLink();
+                showModalCommunicationLink();
+            }
+
+            var connection = new HermesJS.Connection.HermesConnection("/hermesManyToMany");
+            connection.logging = true;
+            if (typeof SESSION_ID !== "undefined") connection.sessionId = SESSION_ID;
+            var media = new HermesJS.Media.MediaHandler(connection);
+            media.logging = true;
+
+            connection.addEventListener("disconnect", onDisconnect);
+            connection.addEventListener("waiting", onWaiting);
+            connection.addEventListener("ready", onReady);
+            connection.addReceivedEventListener(HermesJS.DataType.BINARY, function(event) {
+                var dataView = new DataView(event.data.buffer, event.data.byteOffset);
+                switch (dataView.getUint8(0)) {
+                    case 1:
+                    case 2:
+                    case 3:
+                        drawElement(event.data, drawCanvas);
+                        break;
+                    case 0:
+                        drawCanvas.clearRect(0, 0, 800, 800);
+                        break;
+                    case 4:
+                        if ($.inArray(event.origin, cursorsIds) === -1) {
+                            cursorsIds.push(event.origin);
+                            cursors[event.origin] = {
+                                x: dataView.getInt16(offset.p1x, true),
+                                y: dataView.getInt16(offset.p1y, true),
+                                color: colors[colori++],
+                                origin: event.origin
+                            };
+                            colori = colori % colors.length;
+                        } else {
+                            cursors[event.origin].x = dataView.getInt16(offset.p1x, true);
+                            cursors[event.origin].y = dataView.getInt16(offset.p1y, true);
+                        }
+                        break;
+                }
+            }, HermesJS.Connection.DefaultStreamId.BINARY);
+            connection.start();
+
+            setInterval(function() {
+                if (mouseNow.x !== mouseSendedPosition.x || mouseNow.y !== mouseSendedPosition.y) {
+                    mouseSendedPosition = mouseNow;
+                    connection.sendBinary(getMousePositionData(mouseNow));
+                }
+                drawCursors();
+            }, connection.frequency);
+
+            $("#button-clear-canvas").click(function () {
+                connection.sendBinary(new Uint8Array([0]));
+                drawCanvas.clearRect(0, 0, 800, 800);
+            });
+        }
+        main();
+
+        //This sample use binary data format for communicate with server.
+        //Based on first byte which is name "type" there could be 3 types of message
+        //First type = 0 message contain only one byte, this force cleaning canvas on all clients
+        //Second type = 4 contains 1 byte type and 2 byte (short) for point1 x coordinate and 2 byte (short) for point1 y coordinate
+        //Last type = 1|2|3  (1 -line, 2 rectangle, 3 circle), then point1 (x, y) 4Bytes, then point2 (x,y) 4Bytes, then outline color as 4 Byte (integer), and last field fill color 4 Byte (integer)
+        //type|p1x|p1y|p2x|p2y|outlineColor|fillColor
+        //1B  |2B |2B |2B |2B |4B          |4B         = 17Byte
+    </script>
+}

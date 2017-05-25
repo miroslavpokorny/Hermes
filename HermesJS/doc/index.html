@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title"></a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> </h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p>﻿</p>
+				<h1 id="hermesjs">HermesJS</h1>
+				<p>TypeScript/JavaScript client for Hermes communication library. With support for binary and multimedia data.</p>
+				<h2 id="connection">Connection</h2>
+				<p><em>HermesJS.Connection.HermesConnection</em> is main class used to establish a connection. Providing methods for sending data to a server:</p>
+				<ul>
+					<li>sendAudio(data: Uint8Array, id?: number, mimeType?: string): void</li>
+					<li>sendBinary(data: Uint8Array, id?: number, mimeType?: string): void</li>
+					<li>sendControl(data: ControlObject, id?: number): void</li>
+					<li>sendText(data: string, id?: number, mimeType?: string): void</li>
+					<li>sendVideo(data: Uint8Array, id?: number, mimeType?: string): void</li>
+				</ul>
+				<p>For more info look at documentation at <em>doc</em> directory.</p>
+				<h3 id="events">Events</h3>
+				<p><em>HermesJS.Connection.HermesConnection</em> class support multiple events registred by <em>addEventListener</em> method. Available evetns are in table below.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Event Name</th>
+							<th>Description</th>
+							<th>Callback event object</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>connect</td>
+							<td>event dispatched when connection with the server is established</td>
+							<td><em>HermesEvent</em></td>
+						</tr>
+						<tr>
+							<td>disconnect</td>
+							<td>event dispatched when connection disconnect from the server</td>
+							<td><em>HermesEvent</em></td>
+						</tr>
+						<tr>
+							<td>full</td>
+							<td>event called after connect event when the communication session is full and host can not participate in communication</td>
+							<td><em>HermesEvent</em></td>
+						</tr>
+						<tr>
+							<td>ready</td>
+							<td>event called after connect event when the communication session is ready for receiving and sending data</td>
+							<td><em>HermesEvent</em></td>
+						</tr>
+						<tr>
+							<td>received</td>
+							<td>event called when some data are received (for more precise targeting of received data use <em>addReceivedEventListener</em> method)</td>
+							<td><em>ReceivedEvent</em></td>
+						</tr>
+						<tr>
+							<td>waiting</td>
+							<td>event called after connect event when the communication session is waiting for another connection before receiving and sending data</td>
+							<td><em>HermesEvent</em></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>More precise targeting of received data could be achieved by <em>addReceivedEventListener</em> method.</p>
+				<ul>
+					<li>addReceivedEventListener(eventType: DataType, callback: function, id?: number): void
+						where first parameter specify data type of received data, second specify callback function and third optional parameter ID of received data. If id parameter is omitted event will be called on all IDs filtering only data type.
+					The callback function for received event listener is a function with one parameter of <em>HermesJS.Event.ReceivedEvent</em> type. For more info look at documentation located at <em>doc</em> directory.</li>
+				</ul>
+				<h3 id="usage">Usage</h3>
+				<p>To use this library you need to add a HermesJS.js reference to your page. HermesJS is dependent on SignalR JavaScript client so SignalR JS client library may be referenced before HermesJS. The SignalR client requires the jQuery library.
+				The example code below shows browser code used to establish the connection with a server.</p>
+				<pre><code class="lang-JavaScript">&lt;script src=<span class="hljs-string">"~/Scripts/jquery-1.10.2.min.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script src=<span class="hljs-string">"~/Scripts/jquery.signalR-2.2.1.min.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script src=<span class="hljs-string">"~/Scripts/hermesJS.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+    <span class="hljs-keyword">var</span> connection = <span class="hljs-keyword">new</span> HermesJS.Connection.HermesConnection(<span class="hljs-string">"/hermes"</span>);
+    <span class="hljs-comment">//TODO Set required properties of connection (sessionId, logging,...)</span>
+    connection.start();
+    connection.addEventListener(<span class="hljs-string">"ready"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"READY"</span>)});
+    connection.addReceivedEventListener(HermesJS.DataType.TEXT, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+        <span class="hljs-comment">//TODO listener code, for text with id 132</span>
+    }, <span class="hljs-number">132</span>);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+				<h2 id="media">Media</h2>
+				<p><em>HermesJS.Media.MediaHandler</em> is class used to share user media (webcam, microphone or both) and automatic handling of received media from another connections. For share local media use <em>shareUserMedia</em> method for stop sharing use <em>unshareUserMedia</em> method.</p>
+				<h3 id="events">Events</h3>
+				<p>MediaHandler class supports two events. These two evetns are in table below.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Event Name</th>
+							<th>Description</th>
+							<th>Callback Event Object</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>endstream</td>
+							<td>Event dispatched when the stream with specific ID ends</td>
+							<td><em>MediaEvent</em></td>
+						</tr>
+						<tr>
+							<td>newstream</td>
+							<td>Event dispatched after receive and handle the new data stream</td>
+							<td><em>NewStreamEvent</em></td>
+						</tr>
+						<tr>
+							<td>mediashared</td>
+							<td>Event dispatched when local media stream are being shared</td>
+							<td><em>MediaSharedEvent</em></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="usage">Usage</h3>
+				<pre><code class="lang-JavaScript"><span class="hljs-keyword">var</span> media = <span class="hljs-keyword">new</span> HermesJS.Media.MediaHandler(connection);
+media.addEventListener(<span class="hljs-string">"newstream"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{...});
+media.shareUserMedia({<span class="hljs-attr">audio</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">video</span>: <span class="hljs-literal">true</span>});
+</code></pre>
+				<h2 id="supported-browsers">Supported browsers</h2>
+				<p>Library uses modern JavaScript APIs which may not be supported in older browsers. The HermesJS library is tested and works on:</p>
+				<ul>
+					<li>Firefox 51</li>
+					<li>Google Chrome 56</li>
+					<li>Opera 43</li>
+					<li>EdgeHTML 14 (Edge has only partial support. Edge needs <a href="https://github.com/inexorabletash/text-encoding">text-encoding polyfill</a> for basic functionality, for receiving video <a href="https://blogs.windows.com/msedgedev/2016/04/18/webm-vp9-and-opus-support-in-microsoft-edge/#ShayI80b5XDrg2xY.97">vp9 codec must be enabled</a> [video with vp8 codec is not supported], sending of video is fallback-ed to sending of images)</li>
+				</ul>
+				<h2 id="edit-code">Edit code</h2>
+				<p>The code is written in TypeScript divided into multiple files using Closure-style imports (<em>goog.provide</em> and <em>goog.require</em>). Compiled version of the library could be found in <em>out</em> directory. For more info how to download dependencies and compiler look at <em>SOURCE_README.md</em>.</p>
+				<h2 id="license">License</h2>
+				<p>This project is licensed under <a href="http://www.apache.org/licenses">Apache License, Version 2.0</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="modules/hermesjs.html">HermesJS</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

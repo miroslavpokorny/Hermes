@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="60ddad3c-0f5b-46ff-a4fb-3d0f444f2c29" Title="Namespaces" Url="html/R_Project_Documentation.htm">
+    <HelpTOCNode Id="6ddb800d-299f-4f3b-b7da-b7e425692a6e" Title="Hermes.Communication" Url="html/N_Hermes_Communication.htm">
+      <HelpTOCNode Id="72dadae9-b1e9-4249-9d37-f62616d17b09" Title="BaseCommunication Class" Url="html/T_Hermes_Communication_BaseCommunication.htm">
+        <HelpTOCNode Title="BaseCommunication Constructor " Url="html/M_Hermes_Communication_BaseCommunication__ctor.htm" />
+        <HelpTOCNode Id="a84b968e-c94e-469e-a9f0-ad6b41412d65" Title="BaseCommunication Properties" Url="html/Properties_T_Hermes_Communication_BaseCommunication.htm">
+          <HelpTOCNode Title="AddConnectionCallback Property " Url="html/P_Hermes_Communication_BaseCommunication_AddConnectionCallback.htm" />
+          <HelpTOCNode Title="MasterConnection Property " Url="html/P_Hermes_Communication_BaseCommunication_MasterConnection.htm" />
+          <HelpTOCNode Title="MasterConstraint Property " Url="html/P_Hermes_Communication_BaseCommunication_MasterConstraint.htm" />
+          <HelpTOCNode Title="MaxConnections Property " Url="html/P_Hermes_Communication_BaseCommunication_MaxConnections.htm" />
+          <HelpTOCNode Title="RemoveConnectionCallback Property " Url="html/P_Hermes_Communication_BaseCommunication_RemoveConnectionCallback.htm" />
+          <HelpTOCNode Title="SessionId Property " Url="html/P_Hermes_Communication_BaseCommunication_SessionId.htm" />
+          <HelpTOCNode Title="SlaveConstraint Property " Url="html/P_Hermes_Communication_BaseCommunication_SlaveConstraint.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Communication_BaseCommunication_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="80230683-fa70-4340-b8f1-8f95d6786252" Title="BaseCommunication Methods" Url="html/Methods_T_Hermes_Communication_BaseCommunication.htm">
+          <HelpTOCNode Title="AddConnection Method " Url="html/M_Hermes_Communication_BaseCommunication_AddConnection.htm" />
+          <HelpTOCNode Title="DisableSendingData Method " Url="html/M_Hermes_Communication_BaseCommunication_DisableSendingData.htm" />
+          <HelpTOCNode Title="GetConnectionIds Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIds.htm" />
+          <HelpTOCNode Title="GetConnectionIdsSupportMimeType Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIdsSupportMimeType.htm" />
+          <HelpTOCNode Title="GetConnectionStreamIds Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionStreamIds.htm" />
+          <HelpTOCNode Title="GetMediaStreamHeader Method " Url="html/M_Hermes_Communication_BaseCommunication_GetMediaStreamHeader.htm" />
+          <HelpTOCNode Title="GetNewUniqueStreamId Method " Url="html/M_Hermes_Communication_BaseCommunication_GetNewUniqueStreamId.htm" />
+          <HelpTOCNode Title="IsCommunicationAllowed Method " Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationAllowed.htm" />
+          <HelpTOCNode Title="IsCommunicationFull Method " Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationFull.htm" />
+          <HelpTOCNode Title="IsMasterConnected Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMasterConnected.htm" />
+          <HelpTOCNode Title="IsMediaStreamHeaderExist Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMediaStreamHeaderExist.htm" />
+          <HelpTOCNode Title="IsMimeTypeEnabled Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMimeTypeEnabled.htm" />
+          <HelpTOCNode Title="IsRequestStreamIdAllowed Method " Url="html/M_Hermes_Communication_BaseCommunication_IsRequestStreamIdAllowed.htm" />
+          <HelpTOCNode Title="RemoveConnection Method " Url="html/M_Hermes_Communication_BaseCommunication_RemoveConnection.htm" />
+          <HelpTOCNode Title="SetMasterConstraint Method " Url="html/M_Hermes_Communication_BaseCommunication_SetMasterConstraint.htm" />
+          <HelpTOCNode Title="SetMediaStreamHeader Method " Url="html/M_Hermes_Communication_BaseCommunication_SetMediaStreamHeader.htm" />
+          <HelpTOCNode Title="SetSlaveConstraint Method " Url="html/M_Hermes_Communication_BaseCommunication_SetSlaveConstraint.htm" />
+          <HelpTOCNode Title="StopStream Method " Url="html/M_Hermes_Communication_BaseCommunication_StopStream.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="5cb7f61b-3a22-4383-ba05-eae5db3cddb9" Title="BaseCommunication Fields" Url="html/Fields_T_Hermes_Communication_BaseCommunication.htm">
+          <HelpTOCNode Title="ConnectionGeneratedStreamIds Field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionGeneratedStreamIds.htm" />
+          <HelpTOCNode Title="ConnectionIds Field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionIds.htm" />
+          <HelpTOCNode Title="DisabledMimeTypes Field" Url="html/F_Hermes_Communication_BaseCommunication_DisabledMimeTypes.htm" />
+          <HelpTOCNode Title="MediaHeaders Field" Url="html/F_Hermes_Communication_BaseCommunication_MediaHeaders.htm" />
+          <HelpTOCNode Title="UniqueIdRangeStart Field" Url="html/F_Hermes_Communication_BaseCommunication_UniqueIdRangeStart.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="749288a8-5e6a-4974-b4bc-65bd930178aa" Title="CommunicationCollection Class" Url="html/T_Hermes_Communication_CommunicationCollection.htm">
+        <HelpTOCNode Title="CommunicationCollection Constructor " Url="html/M_Hermes_Communication_CommunicationCollection__ctor.htm" />
+        <HelpTOCNode Id="d88ad330-a982-4a0d-be73-ae05a2e0657f" Title="CommunicationCollection Methods" Url="html/Methods_T_Hermes_Communication_CommunicationCollection.htm">
+          <HelpTOCNode Title="AddCommunication Method " Url="html/M_Hermes_Communication_CommunicationCollection_AddCommunication.htm" />
+          <HelpTOCNode Title="GetCommunicationByConnectionId Method " Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationByConnectionId.htm" />
+          <HelpTOCNode Title="GetCommunicationBySessionId Method " Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationBySessionId.htm" />
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/M_Hermes_Communication_CommunicationCollection_GetEnumerator.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="414af80c-586f-4e39-a5dd-30a16be8af24" Title="CommunicationConstraint Class" Url="html/T_Hermes_Communication_CommunicationConstraint.htm">
+        <HelpTOCNode Title="CommunicationConstraint Constructor " Url="html/M_Hermes_Communication_CommunicationConstraint__ctor.htm" />
+        <HelpTOCNode Id="b89d0da1-5b53-4842-938d-74b83e1ea84e" Title="CommunicationConstraint Properties" Url="html/Properties_T_Hermes_Communication_CommunicationConstraint.htm">
+          <HelpTOCNode Title="AudioDataTypeAllowed Property " Url="html/P_Hermes_Communication_CommunicationConstraint_AudioDataTypeAllowed.htm" />
+          <HelpTOCNode Title="BinaryDataTypeAllowed Property " Url="html/P_Hermes_Communication_CommunicationConstraint_BinaryDataTypeAllowed.htm" />
+          <HelpTOCNode Title="RequestStreamIdAllowed Property " Url="html/P_Hermes_Communication_CommunicationConstraint_RequestStreamIdAllowed.htm" />
+          <HelpTOCNode Title="TextDataTypeAllowed Property " Url="html/P_Hermes_Communication_CommunicationConstraint_TextDataTypeAllowed.htm" />
+          <HelpTOCNode Title="VideoDataTypeAllowed Property " Url="html/P_Hermes_Communication_CommunicationConstraint_VideoDataTypeAllowed.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="25b50f14-e8cb-4122-a43c-70f41d4d4f43" Title="CommunicationConstraint Methods" Url="html/Methods_T_Hermes_Communication_CommunicationConstraint.htm">
+          <HelpTOCNode Title="IsDataTypeAllowed Method " Url="html/M_Hermes_Communication_CommunicationConstraint_IsDataTypeAllowed.htm" />
+          <HelpTOCNode Title="SetConstraints Method " Url="html/M_Hermes_Communication_CommunicationConstraint_SetConstraints.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e204d29e-bc22-4b46-a10e-abf8b9431b22" Title="ICommunication Interface" Url="html/T_Hermes_Communication_ICommunication.htm">
+        <HelpTOCNode Id="7dba7f29-129a-402a-a439-e628bc8ea61d" Title="ICommunication Properties" Url="html/Properties_T_Hermes_Communication_ICommunication.htm">
+          <HelpTOCNode Title="AddConnectionCallback Property " Url="html/P_Hermes_Communication_ICommunication_AddConnectionCallback.htm" />
+          <HelpTOCNode Title="MasterConnection Property " Url="html/P_Hermes_Communication_ICommunication_MasterConnection.htm" />
+          <HelpTOCNode Title="MasterConstraint Property " Url="html/P_Hermes_Communication_ICommunication_MasterConstraint.htm" />
+          <HelpTOCNode Title="MaxConnections Property " Url="html/P_Hermes_Communication_ICommunication_MaxConnections.htm" />
+          <HelpTOCNode Title="RemoveConnectionCallback Property " Url="html/P_Hermes_Communication_ICommunication_RemoveConnectionCallback.htm" />
+          <HelpTOCNode Title="SessionId Property " Url="html/P_Hermes_Communication_ICommunication_SessionId.htm" />
+          <HelpTOCNode Title="SlaveConstraint Property " Url="html/P_Hermes_Communication_ICommunication_SlaveConstraint.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Communication_ICommunication_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="954b461f-b5ac-450e-af51-a8cb568809b1" Title="ICommunication Methods" Url="html/Methods_T_Hermes_Communication_ICommunication.htm">
+          <HelpTOCNode Title="AddConnection Method " Url="html/M_Hermes_Communication_ICommunication_AddConnection.htm" />
+          <HelpTOCNode Title="DisableSendingData Method " Url="html/M_Hermes_Communication_ICommunication_DisableSendingData.htm" />
+          <HelpTOCNode Title="GetConnectionIds Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionIds.htm" />
+          <HelpTOCNode Title="GetConnectionIdsSupportMimeType Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionIdsSupportMimeType.htm" />
+          <HelpTOCNode Title="GetConnectionStreamIds Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionStreamIds.htm" />
+          <HelpTOCNode Title="GetMediaStreamHeader Method " Url="html/M_Hermes_Communication_ICommunication_GetMediaStreamHeader.htm" />
+          <HelpTOCNode Title="GetNewUniqueStreamId Method " Url="html/M_Hermes_Communication_ICommunication_GetNewUniqueStreamId.htm" />
+          <HelpTOCNode Title="IsCommunicationAllowed Method " Url="html/M_Hermes_Communication_ICommunication_IsCommunicationAllowed.htm" />
+          <HelpTOCNode Title="IsCommunicationFull Method " Url="html/M_Hermes_Communication_ICommunication_IsCommunicationFull.htm" />
+          <HelpTOCNode Title="IsMasterConnected Method " Url="html/M_Hermes_Communication_ICommunication_IsMasterConnected.htm" />
+          <HelpTOCNode Title="IsMediaStreamHeaderExist Method " Url="html/M_Hermes_Communication_ICommunication_IsMediaStreamHeaderExist.htm" />
+          <HelpTOCNode Title="IsMimeTypeEnabled Method " Url="html/M_Hermes_Communication_ICommunication_IsMimeTypeEnabled.htm" />
+          <HelpTOCNode Title="IsRequestStreamIdAllowed Method " Url="html/M_Hermes_Communication_ICommunication_IsRequestStreamIdAllowed.htm" />
+          <HelpTOCNode Title="RemoveConnection Method " Url="html/M_Hermes_Communication_ICommunication_RemoveConnection.htm" />
+          <HelpTOCNode Title="SetMasterConstraint Method " Url="html/M_Hermes_Communication_ICommunication_SetMasterConstraint.htm" />
+          <HelpTOCNode Title="SetMediaStreamHeader Method " Url="html/M_Hermes_Communication_ICommunication_SetMediaStreamHeader.htm" />
+          <HelpTOCNode Title="SetSlaveConstraint Method " Url="html/M_Hermes_Communication_ICommunication_SetSlaveConstraint.htm" />
+          <HelpTOCNode Title="StopStream Method " Url="html/M_Hermes_Communication_ICommunication_StopStream.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="4527f6dc-2eef-4d94-94db-4fe051c876ba" Title="ManyToManyCommunication Class" Url="html/T_Hermes_Communication_ManyToManyCommunication.htm">
+        <HelpTOCNode Title="ManyToManyCommunication Constructor " Url="html/M_Hermes_Communication_ManyToManyCommunication__ctor.htm" />
+        <HelpTOCNode Id="86ec69ee-f9aa-4b3d-9ea7-e006a5837e08" Title="ManyToManyCommunication Properties" Url="html/Properties_T_Hermes_Communication_ManyToManyCommunication.htm">
+          <HelpTOCNode Title="MaxConnections Property " Url="html/P_Hermes_Communication_ManyToManyCommunication_MaxConnections.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Communication_ManyToManyCommunication_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ManyToManyCommunication Methods" Url="html/Methods_T_Hermes_Communication_ManyToManyCommunication.htm" />
+        <HelpTOCNode Title="ManyToManyCommunication Fields" Url="html/Fields_T_Hermes_Communication_ManyToManyCommunication.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7e61c3ca-5206-40ff-b880-325a6d5a821f" Title="OneToManyCommunication Class" Url="html/T_Hermes_Communication_OneToManyCommunication.htm">
+        <HelpTOCNode Title="OneToManyCommunication Constructor " Url="html/M_Hermes_Communication_OneToManyCommunication__ctor.htm" />
+        <HelpTOCNode Id="9dc01b8c-a0fe-450a-b529-927de45bc337" Title="OneToManyCommunication Properties" Url="html/Properties_T_Hermes_Communication_OneToManyCommunication.htm">
+          <HelpTOCNode Title="MaxConnections Property " Url="html/P_Hermes_Communication_OneToManyCommunication_MaxConnections.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Communication_OneToManyCommunication_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="OneToManyCommunication Methods" Url="html/Methods_T_Hermes_Communication_OneToManyCommunication.htm" />
+        <HelpTOCNode Title="OneToManyCommunication Fields" Url="html/Fields_T_Hermes_Communication_OneToManyCommunication.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bb3bdcd4-6907-4d92-91b3-b9f9c8be22b8" Title="OneToOneCommunication Class" Url="html/T_Hermes_Communication_OneToOneCommunication.htm">
+        <HelpTOCNode Title="OneToOneCommunication Constructor " Url="html/M_Hermes_Communication_OneToOneCommunication__ctor.htm" />
+        <HelpTOCNode Id="b30deee9-407e-46b2-a39d-fcfb86b388d9" Title="OneToOneCommunication Properties" Url="html/Properties_T_Hermes_Communication_OneToOneCommunication.htm">
+          <HelpTOCNode Title="MaxConnections Property " Url="html/P_Hermes_Communication_OneToOneCommunication_MaxConnections.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Communication_OneToOneCommunication_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="OneToOneCommunication Methods" Url="html/Methods_T_Hermes_Communication_OneToOneCommunication.htm" />
+        <HelpTOCNode Title="OneToOneCommunication Fields" Url="html/Fields_T_Hermes_Communication_OneToOneCommunication.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5a5246c2-a57c-4138-a769-f464ab658915" Title="Status Class" Url="html/T_Hermes_Communication_Status.htm">
+        <HelpTOCNode Id="9b9886d2-814f-4b6f-8a32-aab41c3a9df5" Title="Status Fields" Url="html/Fields_T_Hermes_Communication_Status.htm">
+          <HelpTOCNode Title="Disconnected Field" Url="html/F_Hermes_Communication_Status_Disconnected.htm" />
+          <HelpTOCNode Title="Full Field" Url="html/F_Hermes_Communication_Status_Full.htm" />
+          <HelpTOCNode Title="Ready Field" Url="html/F_Hermes_Communication_Status_Ready.htm" />
+          <HelpTOCNode Title="Waiting Field" Url="html/F_Hermes_Communication_Status_Waiting.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3521d8e4-db81-4ac6-8af3-80fe5753e009" Title="Hermes.Configuration" Url="html/N_Hermes_Configuration.htm">
+      <HelpTOCNode Id="8fd32501-5d8b-44a6-b4a6-056f05cea3e3" Title="Configuration Class" Url="html/T_Hermes_Configuration_Configuration.htm">
+        <HelpTOCNode Title="Configuration Constructor " Url="html/M_Hermes_Configuration_Configuration__ctor.htm" />
+        <HelpTOCNode Id="e6e08f01-7d58-47f9-8e08-c1029e39ebad" Title="Configuration Methods" Url="html/Methods_T_Hermes_Configuration_Configuration.htm">
+          <HelpTOCNode Title="Config Method " Url="html/M_Hermes_Configuration_Configuration_Config.htm" />
+          <HelpTOCNode Id="734858d4-ae12-4915-b744-ca6d1664e75c" Title="MapConnection Method " Url="html/Overload_Hermes_Configuration_Configuration_MapConnection.htm">
+            <HelpTOCNode Title="MapConnection(TConnection) Method (String)" Url="html/M_Hermes_Configuration_Configuration_MapConnection__1.htm" />
+            <HelpTOCNode Title="MapConnection(TConnection) Method (String, ConnectionConfiguration)" Url="html/M_Hermes_Configuration_Configuration_MapConnection__1_1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="0dedae39-91ec-4c23-96cc-cc5ee34deb67" Title="IConfiguration Interface" Url="html/T_Hermes_Configuration_IConfiguration.htm">
+        <HelpTOCNode Id="544148d0-4871-48af-b065-deea0073ca7e" Title="IConfiguration Methods" Url="html/Methods_T_Hermes_Configuration_IConfiguration.htm">
+          <HelpTOCNode Title="Config Method " Url="html/M_Hermes_Configuration_IConfiguration_Config.htm" />
+          <HelpTOCNode Id="bb52c17c-65b9-4f70-be6d-1fe5b48dc3e3" Title="MapConnection Method " Url="html/Overload_Hermes_Configuration_IConfiguration_MapConnection.htm">
+            <HelpTOCNode Title="MapConnection(TConnection) Method (String)" Url="html/M_Hermes_Configuration_IConfiguration_MapConnection__1.htm" />
+            <HelpTOCNode Title="MapConnection(TConnection) Method (String, ConnectionConfiguration)" Url="html/M_Hermes_Configuration_IConfiguration_MapConnection__1_1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8490cf65-d3f5-4585-9664-9d9025a5f7be" Title="Hermes.Connection" Url="html/N_Hermes_Connection.htm">
+      <HelpTOCNode Id="1d3b445c-17ec-4667-b90c-9d901ff2cae7" Title="BaseConnection Class" Url="html/T_Hermes_Connection_BaseConnection.htm">
+        <HelpTOCNode Title="BaseConnection Constructor " Url="html/M_Hermes_Connection_BaseConnection__ctor.htm" />
+        <HelpTOCNode Id="807d0b23-82e4-4711-a079-03c1875965da" Title="BaseConnection Properties" Url="html/Properties_T_Hermes_Connection_BaseConnection.htm">
+          <HelpTOCNode Title="OriginConnection Property " Url="html/P_Hermes_Connection_BaseConnection_OriginConnection.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="44f4a98c-86f3-4c9b-8153-04dab9632ab5" Title="BaseConnection Methods" Url="html/Methods_T_Hermes_Connection_BaseConnection.htm">
+          <HelpTOCNode Title="BroadcastAudioMessage Method " Url="html/M_Hermes_Connection_BaseConnection_BroadcastAudioMessage.htm" />
+          <HelpTOCNode Title="BroadcastBinaryMessage Method " Url="html/M_Hermes_Connection_BaseConnection_BroadcastBinaryMessage.htm" />
+          <HelpTOCNode Title="BroadcastControlMessage Method " Url="html/M_Hermes_Connection_BaseConnection_BroadcastControlMessage.htm" />
+          <HelpTOCNode Title="BroadcastTextMessage Method " Url="html/M_Hermes_Connection_BaseConnection_BroadcastTextMessage.htm" />
+          <HelpTOCNode Title="BroadcastVideoMessage Method " Url="html/M_Hermes_Connection_BaseConnection_BroadcastVideoMessage.htm" />
+          <HelpTOCNode Id="f65a17ac-ed17-4356-8625-ede5e0e38334" Title="OnConnected Method " Url="html/Overload_Hermes_Connection_BaseConnection_OnConnected.htm">
+            <HelpTOCNode Title="OnConnected Method (ConnectionInfo)" Url="html/M_Hermes_Connection_BaseConnection_OnConnected.htm" />
+            <HelpTOCNode Title="OnConnected Method (IRequest, String)" Url="html/M_Hermes_Connection_BaseConnection_OnConnected_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4f81bc7e-6d5a-4b2b-9c82-dd582e5ac0fe" Title="OnDisconnected Method " Url="html/Overload_Hermes_Connection_BaseConnection_OnDisconnected.htm">
+            <HelpTOCNode Title="OnDisconnected Method (ConnectionInfo)" Url="html/M_Hermes_Connection_BaseConnection_OnDisconnected.htm" />
+            <HelpTOCNode Title="OnDisconnected Method (IRequest, String, Boolean)" Url="html/M_Hermes_Connection_BaseConnection_OnDisconnected_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="OnReceived Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceived.htm" />
+          <HelpTOCNode Title="OnReceivedAudio Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceivedAudio.htm" />
+          <HelpTOCNode Title="OnReceivedBinary Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceivedBinary.htm" />
+          <HelpTOCNode Title="OnReceivedControl Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceivedControl.htm" />
+          <HelpTOCNode Title="OnReceivedText Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceivedText.htm" />
+          <HelpTOCNode Title="OnReceivedVideo Method " Url="html/M_Hermes_Connection_BaseConnection_OnReceivedVideo.htm" />
+          <HelpTOCNode Id="fb405806-9102-4146-89c3-3960a20dca13" Title="OnReconnected Method " Url="html/Overload_Hermes_Connection_BaseConnection_OnReconnected.htm">
+            <HelpTOCNode Title="OnReconnected Method (ConnectionInfo)" Url="html/M_Hermes_Connection_BaseConnection_OnReconnected.htm" />
+            <HelpTOCNode Title="OnReconnected Method (IRequest, String)" Url="html/M_Hermes_Connection_BaseConnection_OnReconnected_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="1c75b3b0-575e-46d9-95b8-4f3c6647fb90" Title="SendAudioMessage Method " Url="html/Overload_Hermes_Connection_BaseConnection_SendAudioMessage.htm">
+            <HelpTOCNode Title="SendAudioMessage Method (String, Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendAudioMessage.htm" />
+            <HelpTOCNode Title="SendAudioMessage Method (String[], Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendAudioMessage_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="954f7ec6-f89d-4b3a-ab07-2920e1f3916c" Title="SendBinaryMessage Method " Url="html/Overload_Hermes_Connection_BaseConnection_SendBinaryMessage.htm">
+            <HelpTOCNode Title="SendBinaryMessage Method (String, Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendBinaryMessage.htm" />
+            <HelpTOCNode Title="SendBinaryMessage Method (String[], Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendBinaryMessage_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cd22a843-16c2-489a-bad5-8ccb929442b4" Title="SendControlMessage Method " Url="html/Overload_Hermes_Connection_BaseConnection_SendControlMessage.htm">
+            <HelpTOCNode Title="SendControlMessage Method (String, ControlObject, UInt32)" Url="html/M_Hermes_Connection_BaseConnection_SendControlMessage.htm" />
+            <HelpTOCNode Title="SendControlMessage Method (String[], ControlObject, UInt32)" Url="html/M_Hermes_Connection_BaseConnection_SendControlMessage_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5548a43a-76e4-4a62-8c4d-ef039b2e645c" Title="SendTextMessage Method " Url="html/Overload_Hermes_Connection_BaseConnection_SendTextMessage.htm">
+            <HelpTOCNode Title="SendTextMessage Method (String, String, UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendTextMessage.htm" />
+            <HelpTOCNode Title="SendTextMessage Method (String[], String, UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendTextMessage_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4eccb3f0-ea70-4ffa-b314-f4161b3e2058" Title="SendVideoMessage Method " Url="html/Overload_Hermes_Connection_BaseConnection_SendVideoMessage.htm">
+            <HelpTOCNode Title="SendVideoMessage Method (String, Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendVideoMessage.htm" />
+            <HelpTOCNode Title="SendVideoMessage Method (String[], Byte[], UInt32, String)" Url="html/M_Hermes_Connection_BaseConnection_SendVideoMessage_1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="16239d01-a148-402b-b166-b87fefd7df31" Title="BaseConnection Fields" Url="html/Fields_T_Hermes_Connection_BaseConnection.htm">
+          <HelpTOCNode Title="Communications Field" Url="html/F_Hermes_Connection_BaseConnection_Communications.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="587c479e-a145-4508-a613-ad8d7c84ad7c" Title="ConnectionInfo Class" Url="html/T_Hermes_Connection_ConnectionInfo.htm">
+        <HelpTOCNode Title="ConnectionInfo Constructor " Url="html/M_Hermes_Connection_ConnectionInfo__ctor.htm" />
+        <HelpTOCNode Id="7405cb56-72c5-42a4-8790-1fef794d446c" Title="ConnectionInfo Properties" Url="html/Properties_T_Hermes_Connection_ConnectionInfo.htm">
+          <HelpTOCNode Title="Communication Property " Url="html/P_Hermes_Connection_ConnectionInfo_Communication.htm" />
+          <HelpTOCNode Title="ConnectionId Property " Url="html/P_Hermes_Connection_ConnectionInfo_ConnectionId.htm" />
+          <HelpTOCNode Title="SessionId Property " Url="html/P_Hermes_Connection_ConnectionInfo_SessionId.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ConnectionInfo Methods" Url="html/Methods_T_Hermes_Connection_ConnectionInfo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c7671cf7-93c6-4bb7-9d55-90c06ae88495" Title="DefaultConnection(TCommunication) Class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm">
+        <HelpTOCNode Title="DefaultConnection(TCommunication) Constructor " Url="html/M_Hermes_Connection_DefaultConnection_1__ctor.htm" />
+        <HelpTOCNode Title="DefaultConnection(TCommunication) Properties" Url="html/Properties_T_Hermes_Connection_DefaultConnection_1.htm" />
+        <HelpTOCNode Id="427ec319-7560-4c5c-ba45-97636d835d95" Title="DefaultConnection(TCommunication) Methods" Url="html/Methods_T_Hermes_Connection_DefaultConnection_1.htm">
+          <HelpTOCNode Id="9068fa00-5c1d-4962-a978-082d14b25b0e" Title="OnConnected Method " Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnConnected.htm">
+            <HelpTOCNode Title="OnConnected Method (ConnectionInfo)" Url="html/M_Hermes_Connection_DefaultConnection_1_OnConnected.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="c97c1778-3ad6-4c3b-acf7-76d8dc3f7031" Title="OnDisconnected Method " Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnDisconnected.htm">
+            <HelpTOCNode Title="OnDisconnected Method (ConnectionInfo)" Url="html/M_Hermes_Connection_DefaultConnection_1_OnDisconnected.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0a20788b-6c45-4ece-8232-5c63d2013c64" Title="Hermes.Control" Url="html/N_Hermes_Control.htm">
+      <HelpTOCNode Id="33f06c35-0f4c-486d-8fb8-727418f234e6" Title="Action Class" Url="html/T_Hermes_Control_Action.htm">
+        <HelpTOCNode Id="00ee24cb-80c3-4a26-a504-1c2e6930686f" Title="Action Fields" Url="html/Fields_T_Hermes_Control_Action.htm">
+          <HelpTOCNode Title="Connect Field" Url="html/F_Hermes_Control_Action_Connect.htm" />
+          <HelpTOCNode Title="Disconnect Field" Url="html/F_Hermes_Control_Action_Disconnect.htm" />
+          <HelpTOCNode Title="MediaNotSupported Field" Url="html/F_Hermes_Control_Action_MediaNotSupported.htm" />
+          <HelpTOCNode Title="RequestMediaHeader Field" Url="html/F_Hermes_Control_Action_RequestMediaHeader.htm" />
+          <HelpTOCNode Title="RequestStreamId Field" Url="html/F_Hermes_Control_Action_RequestStreamId.htm" />
+          <HelpTOCNode Title="StopStream Field" Url="html/F_Hermes_Control_Action_StopStream.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="12651546-999b-4c26-b8e6-f9cc26ec164a" Title="ConnectControlObject Class" Url="html/T_Hermes_Control_ConnectControlObject.htm">
+        <HelpTOCNode Title="ConnectControlObject Constructor " Url="html/M_Hermes_Control_ConnectControlObject__ctor.htm" />
+        <HelpTOCNode Id="4a80c0cb-04bc-4586-94ee-3ceb65658eeb" Title="ConnectControlObject Properties" Url="html/Properties_T_Hermes_Control_ConnectControlObject.htm">
+          <HelpTOCNode Title="Constraint Property " Url="html/P_Hermes_Control_ConnectControlObject_Constraint.htm" />
+          <HelpTOCNode Title="SessionId Property " Url="html/P_Hermes_Control_ConnectControlObject_SessionId.htm" />
+          <HelpTOCNode Title="Status Property " Url="html/P_Hermes_Control_ConnectControlObject_Status.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ConnectControlObject Methods" Url="html/Methods_T_Hermes_Control_ConnectControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fa80d5dd-8884-44c7-be2b-12a76ee616a3" Title="ControlObject Class" Url="html/T_Hermes_Control_ControlObject.htm">
+        <HelpTOCNode Title="ControlObject Constructor " Url="html/M_Hermes_Control_ControlObject__ctor.htm" />
+        <HelpTOCNode Id="db76f3d1-b920-41b5-b2b9-8f331b7bedae" Title="ControlObject Properties" Url="html/Properties_T_Hermes_Control_ControlObject.htm">
+          <HelpTOCNode Title="Action Property " Url="html/P_Hermes_Control_ControlObject_Action.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ControlObject Methods" Url="html/Methods_T_Hermes_Control_ControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d643e74a-57af-4861-b84d-1d4809dcfa5a" Title="DisconnectControlObject Class" Url="html/T_Hermes_Control_DisconnectControlObject.htm">
+        <HelpTOCNode Title="DisconnectControlObject Constructor " Url="html/M_Hermes_Control_DisconnectControlObject__ctor.htm" />
+        <HelpTOCNode Id="9dd858f2-d461-42e1-81e0-b36df8571876" Title="DisconnectControlObject Properties" Url="html/Properties_T_Hermes_Control_DisconnectControlObject.htm">
+          <HelpTOCNode Title="DisconnectedStreamIds Property " Url="html/P_Hermes_Control_DisconnectControlObject_DisconnectedStreamIds.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="DisconnectControlObject Methods" Url="html/Methods_T_Hermes_Control_DisconnectControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cfd7743d-eab6-49a4-8069-48064b2280a7" Title="MediaNotSupportedControlObject Class" Url="html/T_Hermes_Control_MediaNotSupportedControlObject.htm">
+        <HelpTOCNode Title="MediaNotSupportedControlObject Constructor " Url="html/M_Hermes_Control_MediaNotSupportedControlObject__ctor.htm" />
+        <HelpTOCNode Id="825f0c0c-488c-4f87-98b1-04d48a65d77e" Title="MediaNotSupportedControlObject Properties" Url="html/Properties_T_Hermes_Control_MediaNotSupportedControlObject.htm">
+          <HelpTOCNode Title="MimeType Property " Url="html/P_Hermes_Control_MediaNotSupportedControlObject_MimeType.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MediaNotSupportedControlObject Methods" Url="html/Methods_T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="66ff1f89-0c83-41dc-8796-acb6941aceb5" Title="RequestMediaHeaderControlObject Class" Url="html/T_Hermes_Control_RequestMediaHeaderControlObject.htm">
+        <HelpTOCNode Title="RequestMediaHeaderControlObject Constructor " Url="html/M_Hermes_Control_RequestMediaHeaderControlObject__ctor.htm" />
+        <HelpTOCNode Id="b6f5bba1-9736-471f-8aa9-9882d4d3dc5e" Title="RequestMediaHeaderControlObject Properties" Url="html/Properties_T_Hermes_Control_RequestMediaHeaderControlObject.htm">
+          <HelpTOCNode Title="MediaHeader Property " Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_MediaHeader.htm" />
+          <HelpTOCNode Title="StreamId Property " Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_StreamId.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="RequestMediaHeaderControlObject Methods" Url="html/Methods_T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5aa013b4-4649-4fee-9423-a80de0eec7b7" Title="RequestStreamIdControlObject Class" Url="html/T_Hermes_Control_RequestStreamIdControlObject.htm">
+        <HelpTOCNode Title="RequestStreamIdControlObject Constructor " Url="html/M_Hermes_Control_RequestStreamIdControlObject__ctor.htm" />
+        <HelpTOCNode Id="e16b0583-bc90-4572-992f-5aed06118af8" Title="RequestStreamIdControlObject Properties" Url="html/Properties_T_Hermes_Control_RequestStreamIdControlObject.htm">
+          <HelpTOCNode Title="StreamId Property " Url="html/P_Hermes_Control_RequestStreamIdControlObject_StreamId.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="RequestStreamIdControlObject Methods" Url="html/Methods_T_Hermes_Control_RequestStreamIdControlObject.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="14e4c4ed-ae11-45e5-8348-ed84966650f6" Title="StopStreamControlObject Class" Url="html/T_Hermes_Control_StopStreamControlObject.htm">
+        <HelpTOCNode Title="StopStreamControlObject Constructor " Url="html/M_Hermes_Control_StopStreamControlObject__ctor.htm" />
+        <HelpTOCNode Id="82f5bd57-9a81-4de6-a9c9-1829afec433c" Title="StopStreamControlObject Properties" Url="html/Properties_T_Hermes_Control_StopStreamControlObject.htm">
+          <HelpTOCNode Title="StreamId Property " Url="html/P_Hermes_Control_StopStreamControlObject_StreamId.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="StopStreamControlObject Methods" Url="html/Methods_T_Hermes_Control_StopStreamControlObject.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6acbec35-26fa-4b0c-a817-bd9d6ad0623f" Title="Hermes.Media" Url="html/N_Hermes_Media.htm">
+      <HelpTOCNode Id="ed9d5d17-f347-449c-abd2-c070589160a9" Title="EbmlFormatException Class" Url="html/T_Hermes_Media_EbmlFormatException.htm">
+        <HelpTOCNode Id="bb9d5471-14c4-44e6-8bb8-c34bb715f185" Title="EbmlFormatException Constructor " Url="html/Overload_Hermes_Media_EbmlFormatException__ctor.htm">
+          <HelpTOCNode Title="EbmlFormatException Constructor (String)" Url="html/M_Hermes_Media_EbmlFormatException__ctor_1.htm" />
+          <HelpTOCNode Title="EbmlFormatException Constructor (SerializationInfo, StreamingContext)" Url="html/M_Hermes_Media_EbmlFormatException__ctor.htm" />
+          <HelpTOCNode Title="EbmlFormatException Constructor (String, Exception)" Url="html/M_Hermes_Media_EbmlFormatException__ctor_2.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="EbmlFormatException Properties" Url="html/Properties_T_Hermes_Media_EbmlFormatException.htm" />
+        <HelpTOCNode Title="EbmlFormatException Methods" Url="html/Methods_T_Hermes_Media_EbmlFormatException.htm" />
+        <HelpTOCNode Title="EbmlFormatException Events" Url="html/Events_T_Hermes_Media_EbmlFormatException.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="1b8700f2-ac4d-4edd-a95b-d7e1d6fda920" Title="WebMHelper Class" Url="html/T_Hermes_Media_WebMHelper.htm">
+        <HelpTOCNode Title="WebMHelper Constructor " Url="html/M_Hermes_Media_WebMHelper__ctor.htm" />
+        <HelpTOCNode Id="a169b95a-5b93-424c-a4ac-df0bdb74f6e2" Title="WebMHelper Properties" Url="html/Properties_T_Hermes_Media_WebMHelper.htm">
+          <HelpTOCNode Title="Data Property " Url="html/P_Hermes_Media_WebMHelper_Data.htm" />
+          <HelpTOCNode Title="SegmentHeader Property " Url="html/P_Hermes_Media_WebMHelper_SegmentHeader.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="66edc02a-a710-49a9-a337-da51609d586f" Title="WebMHelper Methods" Url="html/Methods_T_Hermes_Media_WebMHelper.htm">
+          <HelpTOCNode Title="GetWebMFileHeader Method " Url="html/M_Hermes_Media_WebMHelper_GetWebMFileHeader.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="21e9eb1f-5d1e-4975-af61-46255dee4d72" Title="WebMInfo Class" Url="html/T_Hermes_Media_WebMInfo.htm">
+        <HelpTOCNode Title="WebMInfo Constructor " Url="html/M_Hermes_Media_WebMInfo__ctor.htm" />
+        <HelpTOCNode Id="e3a9ea3d-ef96-434b-838c-437bc40c6684" Title="WebMInfo Properties" Url="html/Properties_T_Hermes_Media_WebMInfo.htm">
+          <HelpTOCNode Title="DateUtc Property " Url="html/P_Hermes_Media_WebMInfo_DateUtc.htm" />
+          <HelpTOCNode Title="Duration Property " Url="html/P_Hermes_Media_WebMInfo_Duration.htm" />
+          <HelpTOCNode Title="MuxingApp Property " Url="html/P_Hermes_Media_WebMInfo_MuxingApp.htm" />
+          <HelpTOCNode Title="TimecodeScale Property " Url="html/P_Hermes_Media_WebMInfo_TimecodeScale.htm" />
+          <HelpTOCNode Title="Title Property " Url="html/P_Hermes_Media_WebMInfo_Title.htm" />
+          <HelpTOCNode Title="WritingApp Property " Url="html/P_Hermes_Media_WebMInfo_WritingApp.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WebMInfo Methods" Url="html/Methods_T_Hermes_Media_WebMInfo.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f41d2166-baa1-4f2d-bf82-24ecc24d1d12" Title="WebMSegmentHeader Class" Url="html/T_Hermes_Media_WebMSegmentHeader.htm">
+        <HelpTOCNode Title="WebMSegmentHeader Constructor " Url="html/M_Hermes_Media_WebMSegmentHeader__ctor.htm" />
+        <HelpTOCNode Id="992b8dc7-7624-425c-8170-1e33b873366a" Title="WebMSegmentHeader Properties" Url="html/Properties_T_Hermes_Media_WebMSegmentHeader.htm">
+          <HelpTOCNode Title="Info Property " Url="html/P_Hermes_Media_WebMSegmentHeader_Info.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="WebMSegmentHeader Methods" Url="html/Methods_T_Hermes_Media_WebMSegmentHeader.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9b3e4ba0-30cf-40d3-af74-c1eeff8600db" Title="Hermes.Protoc.Messages" Url="html/N_Hermes_Protoc_Messages.htm">
+      <HelpTOCNode Id="277bbd7e-69cd-4667-a7c2-f431645af4af" Title="Message Class" Url="html/T_Hermes_Protoc_Messages_Message.htm">
+        <HelpTOCNode Id="0296ac76-49d1-41de-a0b4-6db78fc2d4dc" Title="Message Constructor " Url="html/Overload_Hermes_Protoc_Messages_Message__ctor.htm">
+          <HelpTOCNode Title="Message Constructor " Url="html/M_Hermes_Protoc_Messages_Message__ctor.htm" />
+          <HelpTOCNode Title="Message Constructor (Message)" Url="html/M_Hermes_Protoc_Messages_Message__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="05c8086b-4aff-47c7-b8fc-29f7ea07172b" Title="Message Properties" Url="html/Properties_T_Hermes_Protoc_Messages_Message.htm">
+          <HelpTOCNode Title="Data Property " Url="html/P_Hermes_Protoc_Messages_Message_Data.htm" />
+          <HelpTOCNode Title="DataType Property " Url="html/P_Hermes_Protoc_Messages_Message_DataType.htm" />
+          <HelpTOCNode Title="Descriptor Property " Url="html/P_Hermes_Protoc_Messages_Message_Descriptor.htm" />
+          <HelpTOCNode Title="Id Property " Url="html/P_Hermes_Protoc_Messages_Message_Id.htm" />
+          <HelpTOCNode Title="MimeType Property " Url="html/P_Hermes_Protoc_Messages_Message_MimeType.htm" />
+          <HelpTOCNode Title="Origin Property " Url="html/P_Hermes_Protoc_Messages_Message_Origin.htm" />
+          <HelpTOCNode Title="Parser Property " Url="html/P_Hermes_Protoc_Messages_Message_Parser.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="c955de0a-e221-41b2-a971-d21027738d58" Title="Message Methods" Url="html/Methods_T_Hermes_Protoc_Messages_Message.htm">
+          <HelpTOCNode Title="CalculateSize Method " Url="html/M_Hermes_Protoc_Messages_Message_CalculateSize.htm" />
+          <HelpTOCNode Title="Clone Method " Url="html/M_Hermes_Protoc_Messages_Message_Clone.htm" />
+          <HelpTOCNode Id="58962510-512c-4e6d-98a4-9142a6082b46" Title="Equals Method " Url="html/Overload_Hermes_Protoc_Messages_Message_Equals.htm">
+            <HelpTOCNode Title="Equals Method (Object)" Url="html/M_Hermes_Protoc_Messages_Message_Equals_1.htm" />
+            <HelpTOCNode Title="Equals Method (Message)" Url="html/M_Hermes_Protoc_Messages_Message_Equals.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetHashCode Method " Url="html/M_Hermes_Protoc_Messages_Message_GetHashCode.htm" />
+          <HelpTOCNode Id="451318c9-b64d-4c8b-8fa0-44aeacdc1690" Title="MergeFrom Method " Url="html/Overload_Hermes_Protoc_Messages_Message_MergeFrom.htm">
+            <HelpTOCNode Title="MergeFrom Method (CodedInputStream)" Url="html/M_Hermes_Protoc_Messages_Message_MergeFrom.htm" />
+            <HelpTOCNode Title="MergeFrom Method (Message)" Url="html/M_Hermes_Protoc_Messages_Message_MergeFrom_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="ToString Method " Url="html/M_Hermes_Protoc_Messages_Message_ToString.htm" />
+          <HelpTOCNode Title="WriteTo Method " Url="html/M_Hermes_Protoc_Messages_Message_WriteTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b9c2afa4-d1a7-4bac-98bb-31a67434742b" Title="Message Fields" Url="html/Fields_T_Hermes_Protoc_Messages_Message.htm">
+          <HelpTOCNode Title="DataFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_Message_DataFieldNumber.htm" />
+          <HelpTOCNode Title="DataTypeFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_Message_DataTypeFieldNumber.htm" />
+          <HelpTOCNode Title="IdFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_Message_IdFieldNumber.htm" />
+          <HelpTOCNode Title="MimeTypeFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_Message_MimeTypeFieldNumber.htm" />
+          <HelpTOCNode Title="OriginFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_Message_OriginFieldNumber.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="Message.Types Class" Url="html/T_Hermes_Protoc_Messages_Message_Types.htm" />
+      <HelpTOCNode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+      <HelpTOCNode Id="6fa713d6-5b07-450f-b61a-4dcc023256f6" Title="MessageCollection Class" Url="html/T_Hermes_Protoc_Messages_MessageCollection.htm">
+        <HelpTOCNode Id="56b9f0a0-76fc-4472-a6aa-3b5e30230911" Title="MessageCollection Constructor " Url="html/Overload_Hermes_Protoc_Messages_MessageCollection__ctor.htm">
+          <HelpTOCNode Title="MessageCollection Constructor " Url="html/M_Hermes_Protoc_Messages_MessageCollection__ctor.htm" />
+          <HelpTOCNode Title="MessageCollection Constructor (MessageCollection)" Url="html/M_Hermes_Protoc_Messages_MessageCollection__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="418501a3-808f-4cc4-8b6a-dd37477900eb" Title="MessageCollection Properties" Url="html/Properties_T_Hermes_Protoc_Messages_MessageCollection.htm">
+          <HelpTOCNode Title="Descriptor Property " Url="html/P_Hermes_Protoc_Messages_MessageCollection_Descriptor.htm" />
+          <HelpTOCNode Title="Messages Property " Url="html/P_Hermes_Protoc_Messages_MessageCollection_Messages.htm" />
+          <HelpTOCNode Title="Parser Property " Url="html/P_Hermes_Protoc_Messages_MessageCollection_Parser.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="485948a0-df71-4426-8556-274e66193f5a" Title="MessageCollection Methods" Url="html/Methods_T_Hermes_Protoc_Messages_MessageCollection.htm">
+          <HelpTOCNode Title="CalculateSize Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_CalculateSize.htm" />
+          <HelpTOCNode Title="Clone Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_Clone.htm" />
+          <HelpTOCNode Id="dd79a846-4d23-4444-b9a5-25b05b0f1d3c" Title="Equals Method " Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_Equals.htm">
+            <HelpTOCNode Title="Equals Method (Object)" Url="html/M_Hermes_Protoc_Messages_MessageCollection_Equals_1.htm" />
+            <HelpTOCNode Title="Equals Method (MessageCollection)" Url="html/M_Hermes_Protoc_Messages_MessageCollection_Equals.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetHashCode Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_GetHashCode.htm" />
+          <HelpTOCNode Id="93b17f3a-d638-4a84-a5b3-a5784b3ecdd7" Title="MergeFrom Method " Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_MergeFrom.htm">
+            <HelpTOCNode Title="MergeFrom Method (CodedInputStream)" Url="html/M_Hermes_Protoc_Messages_MessageCollection_MergeFrom.htm" />
+            <HelpTOCNode Title="MergeFrom Method (MessageCollection)" Url="html/M_Hermes_Protoc_Messages_MessageCollection_MergeFrom_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="ToString Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_ToString.htm" />
+          <HelpTOCNode Title="WriteTo Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_WriteTo.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="3d5b93d6-6d67-4427-b732-7ed56ad17c2c" Title="MessageCollection Fields" Url="html/Fields_T_Hermes_Protoc_Messages_MessageCollection.htm">
+          <HelpTOCNode Title="MessagesFieldNumber Field" Url="html/F_Hermes_Protoc_Messages_MessageCollection_MessagesFieldNumber.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="cd764c5e-894e-42a0-a8ff-317d6574d404" Title="MessageReflection Class" Url="html/T_Hermes_Protoc_Messages_MessageReflection.htm">
+        <HelpTOCNode Id="f4c65328-815d-4842-9363-5a2a90ad9b97" Title="MessageReflection Properties" Url="html/Properties_T_Hermes_Protoc_Messages_MessageReflection.htm">
+          <HelpTOCNode Title="Descriptor Property " Url="html/P_Hermes_Protoc_Messages_MessageReflection_Descriptor.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

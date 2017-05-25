@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Action class">
+    <HelpKINode Title="Action Class" Url="html/T_Hermes_Control_Action.htm" />
+    <HelpKINode Title="about Action class" Url="html/T_Hermes_Control_Action.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Control_Action.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Action property" Url="html/P_Hermes_Control_ControlObject_Action.htm" />
+  <HelpKINode Title="Action.Connect field" Url="html/F_Hermes_Control_Action_Connect.htm" />
+  <HelpKINode Title="Action.Disconnect field" Url="html/F_Hermes_Control_Action_Disconnect.htm" />
+  <HelpKINode Title="Action.MediaNotSupported field" Url="html/F_Hermes_Control_Action_MediaNotSupported.htm" />
+  <HelpKINode Title="Action.RequestMediaHeader field" Url="html/F_Hermes_Control_Action_RequestMediaHeader.htm" />
+  <HelpKINode Title="Action.RequestStreamId field" Url="html/F_Hermes_Control_Action_RequestStreamId.htm" />
+  <HelpKINode Title="Action.StopStream field" Url="html/F_Hermes_Control_Action_StopStream.htm" />
+  <HelpKINode Title="AddCommunication method" Url="html/M_Hermes_Communication_CommunicationCollection_AddCommunication.htm" />
+  <HelpKINode Title="AddConnection method">
+    <HelpKINode Title="BaseCommunication.AddConnection Method " Url="html/M_Hermes_Communication_BaseCommunication_AddConnection.htm" />
+    <HelpKINode Title="ICommunication.AddConnection Method " Url="html/M_Hermes_Communication_ICommunication_AddConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AddConnectionCallback property">
+    <HelpKINode Title="BaseCommunication.AddConnectionCallback Property " Url="html/P_Hermes_Communication_BaseCommunication_AddConnectionCallback.htm" />
+    <HelpKINode Title="ICommunication.AddConnectionCallback Property " Url="html/P_Hermes_Communication_ICommunication_AddConnectionCallback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Audio enumeration member">
+    <HelpKINode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    <HelpKINode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AudioDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_AudioDataTypeAllowed.htm" />
+  <HelpKINode Title="BaseCommunication class">
+    <HelpKINode Title="BaseCommunication Class" Url="html/T_Hermes_Communication_BaseCommunication.htm" />
+    <HelpKINode Title="about BaseCommunication class" Url="html/T_Hermes_Communication_BaseCommunication.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_BaseCommunication__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Communication_BaseCommunication.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_BaseCommunication.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_BaseCommunication.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseCommunication.AddConnection method" Url="html/M_Hermes_Communication_BaseCommunication_AddConnection.htm" />
+  <HelpKINode Title="BaseCommunication.AddConnectionCallback property" Url="html/P_Hermes_Communication_BaseCommunication_AddConnectionCallback.htm" />
+  <HelpKINode Title="BaseCommunication.BaseCommunication constructor" Url="html/M_Hermes_Communication_BaseCommunication__ctor.htm" />
+  <HelpKINode Title="BaseCommunication.ConnectionGeneratedStreamIds field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionGeneratedStreamIds.htm" />
+  <HelpKINode Title="BaseCommunication.ConnectionIds field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionIds.htm" />
+  <HelpKINode Title="BaseCommunication.DisabledMimeTypes field" Url="html/F_Hermes_Communication_BaseCommunication_DisabledMimeTypes.htm" />
+  <HelpKINode Title="BaseCommunication.DisableSendingData method" Url="html/M_Hermes_Communication_BaseCommunication_DisableSendingData.htm" />
+  <HelpKINode Title="BaseCommunication.GetConnectionIds method" Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIds.htm" />
+  <HelpKINode Title="BaseCommunication.GetConnectionIdsSupportMimeType method" Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIdsSupportMimeType.htm" />
+  <HelpKINode Title="BaseCommunication.GetConnectionStreamIds method" Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionStreamIds.htm" />
+  <HelpKINode Title="BaseCommunication.GetMediaStreamHeader method" Url="html/M_Hermes_Communication_BaseCommunication_GetMediaStreamHeader.htm" />
+  <HelpKINode Title="BaseCommunication.GetNewUniqueStreamId method" Url="html/M_Hermes_Communication_BaseCommunication_GetNewUniqueStreamId.htm" />
+  <HelpKINode Title="BaseCommunication.IsCommunicationAllowed method" Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationAllowed.htm" />
+  <HelpKINode Title="BaseCommunication.IsCommunicationFull method" Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationFull.htm" />
+  <HelpKINode Title="BaseCommunication.IsMasterConnected method" Url="html/M_Hermes_Communication_BaseCommunication_IsMasterConnected.htm" />
+  <HelpKINode Title="BaseCommunication.IsMediaStreamHeaderExist method" Url="html/M_Hermes_Communication_BaseCommunication_IsMediaStreamHeaderExist.htm" />
+  <HelpKINode Title="BaseCommunication.IsMimeTypeEnabled method" Url="html/M_Hermes_Communication_BaseCommunication_IsMimeTypeEnabled.htm" />
+  <HelpKINode Title="BaseCommunication.IsRequestStreamIdAllowed method" Url="html/M_Hermes_Communication_BaseCommunication_IsRequestStreamIdAllowed.htm" />
+  <HelpKINode Title="BaseCommunication.MasterConnection property" Url="html/P_Hermes_Communication_BaseCommunication_MasterConnection.htm" />
+  <HelpKINode Title="BaseCommunication.MasterConstraint property" Url="html/P_Hermes_Communication_BaseCommunication_MasterConstraint.htm" />
+  <HelpKINode Title="BaseCommunication.MaxConnections property" Url="html/P_Hermes_Communication_BaseCommunication_MaxConnections.htm" />
+  <HelpKINode Title="BaseCommunication.MediaHeaders field" Url="html/F_Hermes_Communication_BaseCommunication_MediaHeaders.htm" />
+  <HelpKINode Title="BaseCommunication.RemoveConnection method" Url="html/M_Hermes_Communication_BaseCommunication_RemoveConnection.htm" />
+  <HelpKINode Title="BaseCommunication.RemoveConnectionCallback property" Url="html/P_Hermes_Communication_BaseCommunication_RemoveConnectionCallback.htm" />
+  <HelpKINode Title="BaseCommunication.SessionId property" Url="html/P_Hermes_Communication_BaseCommunication_SessionId.htm" />
+  <HelpKINode Title="BaseCommunication.SetMasterConstraint method" Url="html/M_Hermes_Communication_BaseCommunication_SetMasterConstraint.htm" />
+  <HelpKINode Title="BaseCommunication.SetMediaStreamHeader method" Url="html/M_Hermes_Communication_BaseCommunication_SetMediaStreamHeader.htm" />
+  <HelpKINode Title="BaseCommunication.SetSlaveConstraint method" Url="html/M_Hermes_Communication_BaseCommunication_SetSlaveConstraint.htm" />
+  <HelpKINode Title="BaseCommunication.SlaveConstraint property" Url="html/P_Hermes_Communication_BaseCommunication_SlaveConstraint.htm" />
+  <HelpKINode Title="BaseCommunication.Status property" Url="html/P_Hermes_Communication_BaseCommunication_Status.htm" />
+  <HelpKINode Title="BaseCommunication.StopStream method" Url="html/M_Hermes_Communication_BaseCommunication_StopStream.htm" />
+  <HelpKINode Title="BaseCommunication.UniqueIdRangeStart field" Url="html/F_Hermes_Communication_BaseCommunication_UniqueIdRangeStart.htm" />
+  <HelpKINode Title="BaseConnection class">
+    <HelpKINode Title="BaseConnection Class" Url="html/T_Hermes_Connection_BaseConnection.htm" />
+    <HelpKINode Title="about BaseConnection class" Url="html/T_Hermes_Connection_BaseConnection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Connection_BaseConnection__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Connection_BaseConnection.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Connection_BaseConnection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Connection_BaseConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BaseConnection.BaseConnection constructor" Url="html/M_Hermes_Connection_BaseConnection__ctor.htm" />
+  <HelpKINode Title="BaseConnection.BroadcastAudioMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastAudioMessage.htm" />
+  <HelpKINode Title="BaseConnection.BroadcastBinaryMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastBinaryMessage.htm" />
+  <HelpKINode Title="BaseConnection.BroadcastControlMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastControlMessage.htm" />
+  <HelpKINode Title="BaseConnection.BroadcastTextMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastTextMessage.htm" />
+  <HelpKINode Title="BaseConnection.BroadcastVideoMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastVideoMessage.htm" />
+  <HelpKINode Title="BaseConnection.Communications field" Url="html/F_Hermes_Connection_BaseConnection_Communications.htm" />
+  <HelpKINode Title="BaseConnection.OnConnected method" Url="html/Overload_Hermes_Connection_BaseConnection_OnConnected.htm" />
+  <HelpKINode Title="BaseConnection.OnDisconnected method" Url="html/Overload_Hermes_Connection_BaseConnection_OnDisconnected.htm" />
+  <HelpKINode Title="BaseConnection.OnReceived method" Url="html/M_Hermes_Connection_BaseConnection_OnReceived.htm" />
+  <HelpKINode Title="BaseConnection.OnReceivedAudio method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedAudio.htm" />
+  <HelpKINode Title="BaseConnection.OnReceivedBinary method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedBinary.htm" />
+  <HelpKINode Title="BaseConnection.OnReceivedControl method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedControl.htm" />
+  <HelpKINode Title="BaseConnection.OnReceivedText method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedText.htm" />
+  <HelpKINode Title="BaseConnection.OnReceivedVideo method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedVideo.htm" />
+  <HelpKINode Title="BaseConnection.OnReconnected method" Url="html/Overload_Hermes_Connection_BaseConnection_OnReconnected.htm" />
+  <HelpKINode Title="BaseConnection.OriginConnection property" Url="html/P_Hermes_Connection_BaseConnection_OriginConnection.htm" />
+  <HelpKINode Title="BaseConnection.SendAudioMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendAudioMessage.htm" />
+  <HelpKINode Title="BaseConnection.SendBinaryMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendBinaryMessage.htm" />
+  <HelpKINode Title="BaseConnection.SendControlMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendControlMessage.htm" />
+  <HelpKINode Title="BaseConnection.SendTextMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendTextMessage.htm" />
+  <HelpKINode Title="BaseConnection.SendVideoMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendVideoMessage.htm" />
+  <HelpKINode Title="Binary enumeration member">
+    <HelpKINode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    <HelpKINode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BinaryDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_BinaryDataTypeAllowed.htm" />
+  <HelpKINode Title="BroadcastAudioMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastAudioMessage.htm" />
+  <HelpKINode Title="BroadcastBinaryMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastBinaryMessage.htm" />
+  <HelpKINode Title="BroadcastControlMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastControlMessage.htm" />
+  <HelpKINode Title="BroadcastTextMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastTextMessage.htm" />
+  <HelpKINode Title="BroadcastVideoMessage method" Url="html/M_Hermes_Connection_BaseConnection_BroadcastVideoMessage.htm" />
+  <HelpKINode Title="CalculateSize method">
+    <HelpKINode Title="Message.CalculateSize Method " Url="html/M_Hermes_Protoc_Messages_Message_CalculateSize.htm" />
+    <HelpKINode Title="MessageCollection.CalculateSize Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_CalculateSize.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Clone method">
+    <HelpKINode Title="Message.Clone Method " Url="html/M_Hermes_Protoc_Messages_Message_Clone.htm" />
+    <HelpKINode Title="MessageCollection.Clone Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_Clone.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Communication property" Url="html/P_Hermes_Connection_ConnectionInfo_Communication.htm" />
+  <HelpKINode Title="CommunicationCollection class">
+    <HelpKINode Title="CommunicationCollection Class" Url="html/T_Hermes_Communication_CommunicationCollection.htm" />
+    <HelpKINode Title="about CommunicationCollection class" Url="html/T_Hermes_Communication_CommunicationCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_CommunicationCollection__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_CommunicationCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CommunicationCollection.AddCommunication method" Url="html/M_Hermes_Communication_CommunicationCollection_AddCommunication.htm" />
+  <HelpKINode Title="CommunicationCollection.CommunicationCollection constructor" Url="html/M_Hermes_Communication_CommunicationCollection__ctor.htm" />
+  <HelpKINode Title="CommunicationCollection.GetCommunicationByConnectionId method" Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationByConnectionId.htm" />
+  <HelpKINode Title="CommunicationCollection.GetCommunicationBySessionId method" Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationBySessionId.htm" />
+  <HelpKINode Title="CommunicationCollection.GetEnumerator method" Url="html/M_Hermes_Communication_CommunicationCollection_GetEnumerator.htm" />
+  <HelpKINode Title="CommunicationConstraint class">
+    <HelpKINode Title="CommunicationConstraint Class" Url="html/T_Hermes_Communication_CommunicationConstraint.htm" />
+    <HelpKINode Title="about CommunicationConstraint class" Url="html/T_Hermes_Communication_CommunicationConstraint.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_CommunicationConstraint__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_CommunicationConstraint.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_CommunicationConstraint.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CommunicationConstraint.AudioDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_AudioDataTypeAllowed.htm" />
+  <HelpKINode Title="CommunicationConstraint.BinaryDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_BinaryDataTypeAllowed.htm" />
+  <HelpKINode Title="CommunicationConstraint.CommunicationConstraint constructor" Url="html/M_Hermes_Communication_CommunicationConstraint__ctor.htm" />
+  <HelpKINode Title="CommunicationConstraint.IsDataTypeAllowed method" Url="html/M_Hermes_Communication_CommunicationConstraint_IsDataTypeAllowed.htm" />
+  <HelpKINode Title="CommunicationConstraint.RequestStreamIdAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_RequestStreamIdAllowed.htm" />
+  <HelpKINode Title="CommunicationConstraint.SetConstraints method" Url="html/M_Hermes_Communication_CommunicationConstraint_SetConstraints.htm" />
+  <HelpKINode Title="CommunicationConstraint.TextDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_TextDataTypeAllowed.htm" />
+  <HelpKINode Title="CommunicationConstraint.VideoDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_VideoDataTypeAllowed.htm" />
+  <HelpKINode Title="Communications field" Url="html/F_Hermes_Connection_BaseConnection_Communications.htm" />
+  <HelpKINode Title="Config method">
+    <HelpKINode Title="Configuration.Config Method " Url="html/M_Hermes_Configuration_Configuration_Config.htm" />
+    <HelpKINode Title="IConfiguration.Config Method " Url="html/M_Hermes_Configuration_IConfiguration_Config.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Configuration class">
+    <HelpKINode Title="Configuration Class" Url="html/T_Hermes_Configuration_Configuration.htm" />
+    <HelpKINode Title="about Configuration class" Url="html/T_Hermes_Configuration_Configuration.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Configuration_Configuration__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Configuration_Configuration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Configuration.Config method" Url="html/M_Hermes_Configuration_Configuration_Config.htm" />
+  <HelpKINode Title="Configuration.Configuration constructor" Url="html/M_Hermes_Configuration_Configuration__ctor.htm" />
+  <HelpKINode Title="Configuration.MapConnection method" Url="html/Overload_Hermes_Configuration_Configuration_MapConnection.htm" />
+  <HelpKINode Title="Connect field" Url="html/F_Hermes_Control_Action_Connect.htm" />
+  <HelpKINode Title="ConnectControlObject class">
+    <HelpKINode Title="ConnectControlObject Class" Url="html/T_Hermes_Control_ConnectControlObject.htm" />
+    <HelpKINode Title="about ConnectControlObject class" Url="html/T_Hermes_Control_ConnectControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_ConnectControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_ConnectControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_ConnectControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConnectControlObject.ConnectControlObject constructor" Url="html/M_Hermes_Control_ConnectControlObject__ctor.htm" />
+  <HelpKINode Title="ConnectControlObject.Constraint property" Url="html/P_Hermes_Control_ConnectControlObject_Constraint.htm" />
+  <HelpKINode Title="ConnectControlObject.SessionId property" Url="html/P_Hermes_Control_ConnectControlObject_SessionId.htm" />
+  <HelpKINode Title="ConnectControlObject.Status property" Url="html/P_Hermes_Control_ConnectControlObject_Status.htm" />
+  <HelpKINode Title="ConnectionGeneratedStreamIds field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionGeneratedStreamIds.htm" />
+  <HelpKINode Title="ConnectionId property" Url="html/P_Hermes_Connection_ConnectionInfo_ConnectionId.htm" />
+  <HelpKINode Title="ConnectionIds field" Url="html/F_Hermes_Communication_BaseCommunication_ConnectionIds.htm" />
+  <HelpKINode Title="ConnectionInfo class">
+    <HelpKINode Title="ConnectionInfo Class" Url="html/T_Hermes_Connection_ConnectionInfo.htm" />
+    <HelpKINode Title="about ConnectionInfo class" Url="html/T_Hermes_Connection_ConnectionInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Connection_ConnectionInfo__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Connection_ConnectionInfo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Connection_ConnectionInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConnectionInfo.Communication property" Url="html/P_Hermes_Connection_ConnectionInfo_Communication.htm" />
+  <HelpKINode Title="ConnectionInfo.ConnectionId property" Url="html/P_Hermes_Connection_ConnectionInfo_ConnectionId.htm" />
+  <HelpKINode Title="ConnectionInfo.ConnectionInfo constructor" Url="html/M_Hermes_Connection_ConnectionInfo__ctor.htm" />
+  <HelpKINode Title="ConnectionInfo.SessionId property" Url="html/P_Hermes_Connection_ConnectionInfo_SessionId.htm" />
+  <HelpKINode Title="Constraint property" Url="html/P_Hermes_Control_ConnectControlObject_Constraint.htm" />
+  <HelpKINode Title="Control enumeration member">
+    <HelpKINode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    <HelpKINode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ControlObject class">
+    <HelpKINode Title="ControlObject Class" Url="html/T_Hermes_Control_ControlObject.htm" />
+    <HelpKINode Title="about ControlObject class" Url="html/T_Hermes_Control_ControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_ControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_ControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_ControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ControlObject.Action property" Url="html/P_Hermes_Control_ControlObject_Action.htm" />
+  <HelpKINode Title="ControlObject.ControlObject constructor" Url="html/M_Hermes_Control_ControlObject__ctor.htm" />
+  <HelpKINode Title="Data property">
+    <HelpKINode Title="Message.Data Property " Url="html/P_Hermes_Protoc_Messages_Message_Data.htm" />
+    <HelpKINode Title="WebMHelper.Data Property " Url="html/P_Hermes_Media_WebMHelper_Data.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DataFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_DataFieldNumber.htm" />
+  <HelpKINode Title="DataType property" Url="html/P_Hermes_Protoc_Messages_Message_DataType.htm" />
+  <HelpKINode Title="DataTypeFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_DataTypeFieldNumber.htm" />
+  <HelpKINode Title="DateUtc property" Url="html/P_Hermes_Media_WebMInfo_DateUtc.htm" />
+  <HelpKINode Title="DefaultConnection(Of TCommunication) class">
+    <HelpKINode Title="DefaultConnection(TCommunication) Class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="about DefaultConnection(Of TCommunication) class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Connection_DefaultConnection_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Connection_DefaultConnection_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultConnection(Of TCommunication).DefaultConnection constructor" Url="html/M_Hermes_Connection_DefaultConnection_1__ctor.htm" />
+  <HelpKINode Title="DefaultConnection(Of TCommunication).OnConnected method" Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnConnected.htm" />
+  <HelpKINode Title="DefaultConnection(Of TCommunication).OnDisconnected method" Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnDisconnected.htm" />
+  <HelpKINode Title="DefaultConnection&lt;TCommunication&gt; class">
+    <HelpKINode Title="DefaultConnection(TCommunication) Class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="about DefaultConnection&lt;TCommunication&gt; class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Connection_DefaultConnection_1__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Connection_DefaultConnection_1.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Connection_DefaultConnection_1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DefaultConnection&lt;TCommunication&gt;.DefaultConnection constructor" Url="html/M_Hermes_Connection_DefaultConnection_1__ctor.htm" />
+  <HelpKINode Title="DefaultConnection&lt;TCommunication&gt;.OnConnected method" Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnConnected.htm" />
+  <HelpKINode Title="DefaultConnection&lt;TCommunication&gt;.OnDisconnected method" Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnDisconnected.htm" />
+  <HelpKINode Title="DefaultStreamId enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+  <HelpKINode Title="Descriptor property">
+    <HelpKINode Title="Message.Descriptor Property " Url="html/P_Hermes_Protoc_Messages_Message_Descriptor.htm" />
+    <HelpKINode Title="MessageCollection.Descriptor Property " Url="html/P_Hermes_Protoc_Messages_MessageCollection_Descriptor.htm" />
+    <HelpKINode Title="MessageReflection.Descriptor Property " Url="html/P_Hermes_Protoc_Messages_MessageReflection_Descriptor.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DisabledMimeTypes field" Url="html/F_Hermes_Communication_BaseCommunication_DisabledMimeTypes.htm" />
+  <HelpKINode Title="DisableSendingData method">
+    <HelpKINode Title="BaseCommunication.DisableSendingData Method " Url="html/M_Hermes_Communication_BaseCommunication_DisableSendingData.htm" />
+    <HelpKINode Title="ICommunication.DisableSendingData Method " Url="html/M_Hermes_Communication_ICommunication_DisableSendingData.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Disconnect field" Url="html/F_Hermes_Control_Action_Disconnect.htm" />
+  <HelpKINode Title="DisconnectControlObject class">
+    <HelpKINode Title="DisconnectControlObject Class" Url="html/T_Hermes_Control_DisconnectControlObject.htm" />
+    <HelpKINode Title="about DisconnectControlObject class" Url="html/T_Hermes_Control_DisconnectControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_DisconnectControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_DisconnectControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_DisconnectControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DisconnectControlObject.DisconnectControlObject constructor" Url="html/M_Hermes_Control_DisconnectControlObject__ctor.htm" />
+  <HelpKINode Title="DisconnectControlObject.DisconnectedStreamIds property" Url="html/P_Hermes_Control_DisconnectControlObject_DisconnectedStreamIds.htm" />
+  <HelpKINode Title="Disconnected field" Url="html/F_Hermes_Communication_Status_Disconnected.htm" />
+  <HelpKINode Title="DisconnectedStreamIds property" Url="html/P_Hermes_Control_DisconnectControlObject_DisconnectedStreamIds.htm" />
+  <HelpKINode Title="Duration property" Url="html/P_Hermes_Media_WebMInfo_Duration.htm" />
+  <HelpKINode Title="EbmlFormatException class">
+    <HelpKINode Title="EbmlFormatException Class" Url="html/T_Hermes_Media_EbmlFormatException.htm" />
+    <HelpKINode Title="about EbmlFormatException class" Url="html/T_Hermes_Media_EbmlFormatException.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Hermes_Media_EbmlFormatException__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Hermes_Media_EbmlFormatException.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Media_EbmlFormatException.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Media_EbmlFormatException.htm" />
+  </HelpKINode>
+  <HelpKINode Title="EbmlFormatException.EbmlFormatException constructor" Url="html/Overload_Hermes_Media_EbmlFormatException__ctor.htm" />
+  <HelpKINode Title="Equals method">
+    <HelpKINode Title="Message.Equals Method " Url="html/Overload_Hermes_Protoc_Messages_Message_Equals.htm" />
+    <HelpKINode Title="MessageCollection.Equals Method " Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_Equals.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Full field" Url="html/F_Hermes_Communication_Status_Full.htm" />
+  <HelpKINode Title="GetCommunicationByConnectionId method" Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationByConnectionId.htm" />
+  <HelpKINode Title="GetCommunicationBySessionId method" Url="html/M_Hermes_Communication_CommunicationCollection_GetCommunicationBySessionId.htm" />
+  <HelpKINode Title="GetConnectionIds method">
+    <HelpKINode Title="BaseCommunication.GetConnectionIds Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIds.htm" />
+    <HelpKINode Title="ICommunication.GetConnectionIds Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionIds.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetConnectionIdsSupportMimeType method">
+    <HelpKINode Title="BaseCommunication.GetConnectionIdsSupportMimeType Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionIdsSupportMimeType.htm" />
+    <HelpKINode Title="ICommunication.GetConnectionIdsSupportMimeType Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionIdsSupportMimeType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetConnectionStreamIds method">
+    <HelpKINode Title="BaseCommunication.GetConnectionStreamIds Method " Url="html/M_Hermes_Communication_BaseCommunication_GetConnectionStreamIds.htm" />
+    <HelpKINode Title="ICommunication.GetConnectionStreamIds Method " Url="html/M_Hermes_Communication_ICommunication_GetConnectionStreamIds.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetEnumerator method" Url="html/M_Hermes_Communication_CommunicationCollection_GetEnumerator.htm" />
+  <HelpKINode Title="GetHashCode method">
+    <HelpKINode Title="Message.GetHashCode Method " Url="html/M_Hermes_Protoc_Messages_Message_GetHashCode.htm" />
+    <HelpKINode Title="MessageCollection.GetHashCode Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_GetHashCode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetMediaStreamHeader method">
+    <HelpKINode Title="BaseCommunication.GetMediaStreamHeader Method " Url="html/M_Hermes_Communication_BaseCommunication_GetMediaStreamHeader.htm" />
+    <HelpKINode Title="ICommunication.GetMediaStreamHeader Method " Url="html/M_Hermes_Communication_ICommunication_GetMediaStreamHeader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetNewUniqueStreamId method">
+    <HelpKINode Title="BaseCommunication.GetNewUniqueStreamId Method " Url="html/M_Hermes_Communication_BaseCommunication_GetNewUniqueStreamId.htm" />
+    <HelpKINode Title="ICommunication.GetNewUniqueStreamId Method " Url="html/M_Hermes_Communication_ICommunication_GetNewUniqueStreamId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetWebMFileHeader method" Url="html/M_Hermes_Media_WebMHelper_GetWebMFileHeader.htm" />
+  <HelpKINode Title="Hermes.Communication namespace" Url="html/N_Hermes_Communication.htm" />
+  <HelpKINode Title="Hermes.Communication.BaseCommunication class" Url="html/T_Hermes_Communication_BaseCommunication.htm" />
+  <HelpKINode Title="Hermes.Communication.CommunicationCollection class" Url="html/T_Hermes_Communication_CommunicationCollection.htm" />
+  <HelpKINode Title="Hermes.Communication.CommunicationConstraint class" Url="html/T_Hermes_Communication_CommunicationConstraint.htm" />
+  <HelpKINode Title="Hermes.Communication.ICommunication interface" Url="html/T_Hermes_Communication_ICommunication.htm" />
+  <HelpKINode Title="Hermes.Communication.ManyToManyCommunication class" Url="html/T_Hermes_Communication_ManyToManyCommunication.htm" />
+  <HelpKINode Title="Hermes.Communication.OneToManyCommunication class" Url="html/T_Hermes_Communication_OneToManyCommunication.htm" />
+  <HelpKINode Title="Hermes.Communication.OneToOneCommunication class" Url="html/T_Hermes_Communication_OneToOneCommunication.htm" />
+  <HelpKINode Title="Hermes.Communication.Status class" Url="html/T_Hermes_Communication_Status.htm" />
+  <HelpKINode Title="Hermes.Configuration namespace" Url="html/N_Hermes_Configuration.htm" />
+  <HelpKINode Title="Hermes.Configuration.Configuration class" Url="html/T_Hermes_Configuration_Configuration.htm" />
+  <HelpKINode Title="Hermes.Configuration.IConfiguration interface" Url="html/T_Hermes_Configuration_IConfiguration.htm" />
+  <HelpKINode Title="Hermes.Connection namespace" Url="html/N_Hermes_Connection.htm" />
+  <HelpKINode Title="Hermes.Connection.BaseConnection class" Url="html/T_Hermes_Connection_BaseConnection.htm" />
+  <HelpKINode Title="Hermes.Connection.ConnectionInfo class" Url="html/T_Hermes_Connection_ConnectionInfo.htm" />
+  <HelpKINode Title="Hermes.Connection.DefaultConnection(Of TCommunication) class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+  <HelpKINode Title="Hermes.Connection.DefaultConnection&lt;TCommunication&gt; class" Url="html/T_Hermes_Connection_DefaultConnection_1.htm" />
+  <HelpKINode Title="Hermes.Connection.DefaultStreamId enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+  <HelpKINode Title="Hermes.Control namespace" Url="html/N_Hermes_Control.htm" />
+  <HelpKINode Title="Hermes.Control.Action class" Url="html/T_Hermes_Control_Action.htm" />
+  <HelpKINode Title="Hermes.Control.ConnectControlObject class" Url="html/T_Hermes_Control_ConnectControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.ControlObject class" Url="html/T_Hermes_Control_ControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.DisconnectControlObject class" Url="html/T_Hermes_Control_DisconnectControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.MediaNotSupportedControlObject class" Url="html/T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.RequestMediaHeaderControlObject class" Url="html/T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.RequestStreamIdControlObject class" Url="html/T_Hermes_Control_RequestStreamIdControlObject.htm" />
+  <HelpKINode Title="Hermes.Control.StopStreamControlObject class" Url="html/T_Hermes_Control_StopStreamControlObject.htm" />
+  <HelpKINode Title="Hermes.Media namespace" Url="html/N_Hermes_Media.htm" />
+  <HelpKINode Title="Hermes.Media.EbmlFormatException class" Url="html/T_Hermes_Media_EbmlFormatException.htm" />
+  <HelpKINode Title="Hermes.Media.WebMHelper class" Url="html/T_Hermes_Media_WebMHelper.htm" />
+  <HelpKINode Title="Hermes.Media.WebMInfo class" Url="html/T_Hermes_Media_WebMInfo.htm" />
+  <HelpKINode Title="Hermes.Media.WebMSegmentHeader class" Url="html/T_Hermes_Media_WebMSegmentHeader.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages namespace" Url="html/N_Hermes_Protoc_Messages.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages.Message class" Url="html/T_Hermes_Protoc_Messages_Message.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages.Message.Types class" Url="html/T_Hermes_Protoc_Messages_Message_Types.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages.Message.Types.DataType enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages.MessageCollection class" Url="html/T_Hermes_Protoc_Messages_MessageCollection.htm" />
+  <HelpKINode Title="Hermes.Protoc.Messages.MessageReflection class" Url="html/T_Hermes_Protoc_Messages_MessageReflection.htm" />
+  <HelpKINode Title="ICommunication interface">
+    <HelpKINode Title="ICommunication Interface" Url="html/T_Hermes_Communication_ICommunication.htm" />
+    <HelpKINode Title="about ICommunication interface" Url="html/T_Hermes_Communication_ICommunication.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_ICommunication.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_ICommunication.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ICommunication.AddConnection method" Url="html/M_Hermes_Communication_ICommunication_AddConnection.htm" />
+  <HelpKINode Title="ICommunication.AddConnectionCallback property" Url="html/P_Hermes_Communication_ICommunication_AddConnectionCallback.htm" />
+  <HelpKINode Title="ICommunication.DisableSendingData method" Url="html/M_Hermes_Communication_ICommunication_DisableSendingData.htm" />
+  <HelpKINode Title="ICommunication.GetConnectionIds method" Url="html/M_Hermes_Communication_ICommunication_GetConnectionIds.htm" />
+  <HelpKINode Title="ICommunication.GetConnectionIdsSupportMimeType method" Url="html/M_Hermes_Communication_ICommunication_GetConnectionIdsSupportMimeType.htm" />
+  <HelpKINode Title="ICommunication.GetConnectionStreamIds method" Url="html/M_Hermes_Communication_ICommunication_GetConnectionStreamIds.htm" />
+  <HelpKINode Title="ICommunication.GetMediaStreamHeader method" Url="html/M_Hermes_Communication_ICommunication_GetMediaStreamHeader.htm" />
+  <HelpKINode Title="ICommunication.GetNewUniqueStreamId method" Url="html/M_Hermes_Communication_ICommunication_GetNewUniqueStreamId.htm" />
+  <HelpKINode Title="ICommunication.IsCommunicationAllowed method" Url="html/M_Hermes_Communication_ICommunication_IsCommunicationAllowed.htm" />
+  <HelpKINode Title="ICommunication.IsCommunicationFull method" Url="html/M_Hermes_Communication_ICommunication_IsCommunicationFull.htm" />
+  <HelpKINode Title="ICommunication.IsMasterConnected method" Url="html/M_Hermes_Communication_ICommunication_IsMasterConnected.htm" />
+  <HelpKINode Title="ICommunication.IsMediaStreamHeaderExist method" Url="html/M_Hermes_Communication_ICommunication_IsMediaStreamHeaderExist.htm" />
+  <HelpKINode Title="ICommunication.IsMimeTypeEnabled method" Url="html/M_Hermes_Communication_ICommunication_IsMimeTypeEnabled.htm" />
+  <HelpKINode Title="ICommunication.IsRequestStreamIdAllowed method" Url="html/M_Hermes_Communication_ICommunication_IsRequestStreamIdAllowed.htm" />
+  <HelpKINode Title="ICommunication.MasterConnection property" Url="html/P_Hermes_Communication_ICommunication_MasterConnection.htm" />
+  <HelpKINode Title="ICommunication.MasterConstraint property" Url="html/P_Hermes_Communication_ICommunication_MasterConstraint.htm" />
+  <HelpKINode Title="ICommunication.MaxConnections property" Url="html/P_Hermes_Communication_ICommunication_MaxConnections.htm" />
+  <HelpKINode Title="ICommunication.RemoveConnection method" Url="html/M_Hermes_Communication_ICommunication_RemoveConnection.htm" />
+  <HelpKINode Title="ICommunication.RemoveConnectionCallback property" Url="html/P_Hermes_Communication_ICommunication_RemoveConnectionCallback.htm" />
+  <HelpKINode Title="ICommunication.SessionId property" Url="html/P_Hermes_Communication_ICommunication_SessionId.htm" />
+  <HelpKINode Title="ICommunication.SetMasterConstraint method" Url="html/M_Hermes_Communication_ICommunication_SetMasterConstraint.htm" />
+  <HelpKINode Title="ICommunication.SetMediaStreamHeader method" Url="html/M_Hermes_Communication_ICommunication_SetMediaStreamHeader.htm" />
+  <HelpKINode Title="ICommunication.SetSlaveConstraint method" Url="html/M_Hermes_Communication_ICommunication_SetSlaveConstraint.htm" />
+  <HelpKINode Title="ICommunication.SlaveConstraint property" Url="html/P_Hermes_Communication_ICommunication_SlaveConstraint.htm" />
+  <HelpKINode Title="ICommunication.Status property" Url="html/P_Hermes_Communication_ICommunication_Status.htm" />
+  <HelpKINode Title="ICommunication.StopStream method" Url="html/M_Hermes_Communication_ICommunication_StopStream.htm" />
+  <HelpKINode Title="IConfiguration interface">
+    <HelpKINode Title="IConfiguration Interface" Url="html/T_Hermes_Configuration_IConfiguration.htm" />
+    <HelpKINode Title="about IConfiguration interface" Url="html/T_Hermes_Configuration_IConfiguration.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Configuration_IConfiguration.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IConfiguration.Config method" Url="html/M_Hermes_Configuration_IConfiguration_Config.htm" />
+  <HelpKINode Title="IConfiguration.MapConnection method" Url="html/Overload_Hermes_Configuration_IConfiguration_MapConnection.htm" />
+  <HelpKINode Title="Id property" Url="html/P_Hermes_Protoc_Messages_Message_Id.htm" />
+  <HelpKINode Title="IdFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_IdFieldNumber.htm" />
+  <HelpKINode Title="Info property" Url="html/P_Hermes_Media_WebMSegmentHeader_Info.htm" />
+  <HelpKINode Title="IsCommunicationAllowed method">
+    <HelpKINode Title="BaseCommunication.IsCommunicationAllowed Method " Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationAllowed.htm" />
+    <HelpKINode Title="ICommunication.IsCommunicationAllowed Method " Url="html/M_Hermes_Communication_ICommunication_IsCommunicationAllowed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsCommunicationFull method">
+    <HelpKINode Title="BaseCommunication.IsCommunicationFull Method " Url="html/M_Hermes_Communication_BaseCommunication_IsCommunicationFull.htm" />
+    <HelpKINode Title="ICommunication.IsCommunicationFull Method " Url="html/M_Hermes_Communication_ICommunication_IsCommunicationFull.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsDataTypeAllowed method" Url="html/M_Hermes_Communication_CommunicationConstraint_IsDataTypeAllowed.htm" />
+  <HelpKINode Title="IsMasterConnected method">
+    <HelpKINode Title="BaseCommunication.IsMasterConnected Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMasterConnected.htm" />
+    <HelpKINode Title="ICommunication.IsMasterConnected Method " Url="html/M_Hermes_Communication_ICommunication_IsMasterConnected.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsMediaStreamHeaderExist method">
+    <HelpKINode Title="BaseCommunication.IsMediaStreamHeaderExist Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMediaStreamHeaderExist.htm" />
+    <HelpKINode Title="ICommunication.IsMediaStreamHeaderExist Method " Url="html/M_Hermes_Communication_ICommunication_IsMediaStreamHeaderExist.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsMimeTypeEnabled method">
+    <HelpKINode Title="BaseCommunication.IsMimeTypeEnabled Method " Url="html/M_Hermes_Communication_BaseCommunication_IsMimeTypeEnabled.htm" />
+    <HelpKINode Title="ICommunication.IsMimeTypeEnabled Method " Url="html/M_Hermes_Communication_ICommunication_IsMimeTypeEnabled.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IsRequestStreamIdAllowed method">
+    <HelpKINode Title="BaseCommunication.IsRequestStreamIdAllowed Method " Url="html/M_Hermes_Communication_BaseCommunication_IsRequestStreamIdAllowed.htm" />
+    <HelpKINode Title="ICommunication.IsRequestStreamIdAllowed Method " Url="html/M_Hermes_Communication_ICommunication_IsRequestStreamIdAllowed.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ManyToManyCommunication class">
+    <HelpKINode Title="ManyToManyCommunication Class" Url="html/T_Hermes_Communication_ManyToManyCommunication.htm" />
+    <HelpKINode Title="about ManyToManyCommunication class" Url="html/T_Hermes_Communication_ManyToManyCommunication.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_ManyToManyCommunication__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Communication_ManyToManyCommunication.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_ManyToManyCommunication.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_ManyToManyCommunication.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ManyToManyCommunication.ManyToManyCommunication constructor" Url="html/M_Hermes_Communication_ManyToManyCommunication__ctor.htm" />
+  <HelpKINode Title="ManyToManyCommunication.MaxConnections property" Url="html/P_Hermes_Communication_ManyToManyCommunication_MaxConnections.htm" />
+  <HelpKINode Title="ManyToManyCommunication.Status property" Url="html/P_Hermes_Communication_ManyToManyCommunication_Status.htm" />
+  <HelpKINode Title="MapConnection method">
+    <HelpKINode Title="Configuration.MapConnection Method " Url="html/Overload_Hermes_Configuration_Configuration_MapConnection.htm" />
+    <HelpKINode Title="IConfiguration.MapConnection Method " Url="html/Overload_Hermes_Configuration_IConfiguration_MapConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MasterConnection property">
+    <HelpKINode Title="BaseCommunication.MasterConnection Property " Url="html/P_Hermes_Communication_BaseCommunication_MasterConnection.htm" />
+    <HelpKINode Title="ICommunication.MasterConnection Property " Url="html/P_Hermes_Communication_ICommunication_MasterConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MasterConstraint property">
+    <HelpKINode Title="BaseCommunication.MasterConstraint Property " Url="html/P_Hermes_Communication_BaseCommunication_MasterConstraint.htm" />
+    <HelpKINode Title="ICommunication.MasterConstraint Property " Url="html/P_Hermes_Communication_ICommunication_MasterConstraint.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MaxConnections property">
+    <HelpKINode Title="BaseCommunication.MaxConnections Property " Url="html/P_Hermes_Communication_BaseCommunication_MaxConnections.htm" />
+    <HelpKINode Title="ICommunication.MaxConnections Property " Url="html/P_Hermes_Communication_ICommunication_MaxConnections.htm" />
+    <HelpKINode Title="ManyToManyCommunication.MaxConnections Property " Url="html/P_Hermes_Communication_ManyToManyCommunication_MaxConnections.htm" />
+    <HelpKINode Title="OneToManyCommunication.MaxConnections Property " Url="html/P_Hermes_Communication_OneToManyCommunication_MaxConnections.htm" />
+    <HelpKINode Title="OneToOneCommunication.MaxConnections Property " Url="html/P_Hermes_Communication_OneToOneCommunication_MaxConnections.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MediaHeader property" Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_MediaHeader.htm" />
+  <HelpKINode Title="MediaHeaders field" Url="html/F_Hermes_Communication_BaseCommunication_MediaHeaders.htm" />
+  <HelpKINode Title="MediaNotSupported field" Url="html/F_Hermes_Control_Action_MediaNotSupported.htm" />
+  <HelpKINode Title="MediaNotSupportedControlObject class">
+    <HelpKINode Title="MediaNotSupportedControlObject Class" Url="html/T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+    <HelpKINode Title="about MediaNotSupportedControlObject class" Url="html/T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_MediaNotSupportedControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_MediaNotSupportedControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MediaNotSupportedControlObject.MediaNotSupportedControlObject constructor" Url="html/M_Hermes_Control_MediaNotSupportedControlObject__ctor.htm" />
+  <HelpKINode Title="MediaNotSupportedControlObject.MimeType property" Url="html/P_Hermes_Control_MediaNotSupportedControlObject_MimeType.htm" />
+  <HelpKINode Title="MergeFrom method">
+    <HelpKINode Title="Message.MergeFrom Method " Url="html/Overload_Hermes_Protoc_Messages_Message_MergeFrom.htm" />
+    <HelpKINode Title="MessageCollection.MergeFrom Method " Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_MergeFrom.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message class">
+    <HelpKINode Title="Message Class" Url="html/T_Hermes_Protoc_Messages_Message.htm" />
+    <HelpKINode Title="about Message class" Url="html/T_Hermes_Protoc_Messages_Message.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Hermes_Protoc_Messages_Message__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Protoc_Messages_Message.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Protoc_Messages_Message.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Protoc_Messages_Message.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message.CalculateSize method" Url="html/M_Hermes_Protoc_Messages_Message_CalculateSize.htm" />
+  <HelpKINode Title="Message.Clone method" Url="html/M_Hermes_Protoc_Messages_Message_Clone.htm" />
+  <HelpKINode Title="Message.Data property" Url="html/P_Hermes_Protoc_Messages_Message_Data.htm" />
+  <HelpKINode Title="Message.DataFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_DataFieldNumber.htm" />
+  <HelpKINode Title="Message.DataType property" Url="html/P_Hermes_Protoc_Messages_Message_DataType.htm" />
+  <HelpKINode Title="Message.DataTypeFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_DataTypeFieldNumber.htm" />
+  <HelpKINode Title="Message.Descriptor property" Url="html/P_Hermes_Protoc_Messages_Message_Descriptor.htm" />
+  <HelpKINode Title="Message.Equals method" Url="html/Overload_Hermes_Protoc_Messages_Message_Equals.htm" />
+  <HelpKINode Title="Message.GetHashCode method" Url="html/M_Hermes_Protoc_Messages_Message_GetHashCode.htm" />
+  <HelpKINode Title="Message.Id property" Url="html/P_Hermes_Protoc_Messages_Message_Id.htm" />
+  <HelpKINode Title="Message.IdFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_IdFieldNumber.htm" />
+  <HelpKINode Title="Message.MergeFrom method" Url="html/Overload_Hermes_Protoc_Messages_Message_MergeFrom.htm" />
+  <HelpKINode Title="Message.Message constructor" Url="html/Overload_Hermes_Protoc_Messages_Message__ctor.htm" />
+  <HelpKINode Title="Message.MimeType property" Url="html/P_Hermes_Protoc_Messages_Message_MimeType.htm" />
+  <HelpKINode Title="Message.MimeTypeFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_MimeTypeFieldNumber.htm" />
+  <HelpKINode Title="Message.Origin property" Url="html/P_Hermes_Protoc_Messages_Message_Origin.htm" />
+  <HelpKINode Title="Message.OriginFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_OriginFieldNumber.htm" />
+  <HelpKINode Title="Message.Parser property" Url="html/P_Hermes_Protoc_Messages_Message_Parser.htm" />
+  <HelpKINode Title="Message.ToString method" Url="html/M_Hermes_Protoc_Messages_Message_ToString.htm" />
+  <HelpKINode Title="Message.Types class">
+    <HelpKINode Title="Message.Types Class" Url="html/T_Hermes_Protoc_Messages_Message_Types.htm" />
+    <HelpKINode Title="about Message.Types class" Url="html/T_Hermes_Protoc_Messages_Message_Types.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message.Types.DataType enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  <HelpKINode Title="Message.WriteTo method" Url="html/M_Hermes_Protoc_Messages_Message_WriteTo.htm" />
+  <HelpKINode Title="MessageCollection class">
+    <HelpKINode Title="MessageCollection Class" Url="html/T_Hermes_Protoc_Messages_MessageCollection.htm" />
+    <HelpKINode Title="about MessageCollection class" Url="html/T_Hermes_Protoc_Messages_MessageCollection.htm" />
+    <HelpKINode Title="constructor" Url="html/Overload_Hermes_Protoc_Messages_MessageCollection__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Protoc_Messages_MessageCollection.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Protoc_Messages_MessageCollection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Protoc_Messages_MessageCollection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageCollection.CalculateSize method" Url="html/M_Hermes_Protoc_Messages_MessageCollection_CalculateSize.htm" />
+  <HelpKINode Title="MessageCollection.Clone method" Url="html/M_Hermes_Protoc_Messages_MessageCollection_Clone.htm" />
+  <HelpKINode Title="MessageCollection.Descriptor property" Url="html/P_Hermes_Protoc_Messages_MessageCollection_Descriptor.htm" />
+  <HelpKINode Title="MessageCollection.Equals method" Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_Equals.htm" />
+  <HelpKINode Title="MessageCollection.GetHashCode method" Url="html/M_Hermes_Protoc_Messages_MessageCollection_GetHashCode.htm" />
+  <HelpKINode Title="MessageCollection.MergeFrom method" Url="html/Overload_Hermes_Protoc_Messages_MessageCollection_MergeFrom.htm" />
+  <HelpKINode Title="MessageCollection.MessageCollection constructor" Url="html/Overload_Hermes_Protoc_Messages_MessageCollection__ctor.htm" />
+  <HelpKINode Title="MessageCollection.Messages property" Url="html/P_Hermes_Protoc_Messages_MessageCollection_Messages.htm" />
+  <HelpKINode Title="MessageCollection.MessagesFieldNumber field" Url="html/F_Hermes_Protoc_Messages_MessageCollection_MessagesFieldNumber.htm" />
+  <HelpKINode Title="MessageCollection.Parser property" Url="html/P_Hermes_Protoc_Messages_MessageCollection_Parser.htm" />
+  <HelpKINode Title="MessageCollection.ToString method" Url="html/M_Hermes_Protoc_Messages_MessageCollection_ToString.htm" />
+  <HelpKINode Title="MessageCollection.WriteTo method" Url="html/M_Hermes_Protoc_Messages_MessageCollection_WriteTo.htm" />
+  <HelpKINode Title="MessageReflection class">
+    <HelpKINode Title="MessageReflection Class" Url="html/T_Hermes_Protoc_Messages_MessageReflection.htm" />
+    <HelpKINode Title="about MessageReflection class" Url="html/T_Hermes_Protoc_Messages_MessageReflection.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Protoc_Messages_MessageReflection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageReflection.Descriptor property" Url="html/P_Hermes_Protoc_Messages_MessageReflection_Descriptor.htm" />
+  <HelpKINode Title="Messages property" Url="html/P_Hermes_Protoc_Messages_MessageCollection_Messages.htm" />
+  <HelpKINode Title="MessagesFieldNumber field" Url="html/F_Hermes_Protoc_Messages_MessageCollection_MessagesFieldNumber.htm" />
+  <HelpKINode Title="MimeType property">
+    <HelpKINode Title="MediaNotSupportedControlObject.MimeType Property " Url="html/P_Hermes_Control_MediaNotSupportedControlObject_MimeType.htm" />
+    <HelpKINode Title="Message.MimeType Property " Url="html/P_Hermes_Protoc_Messages_Message_MimeType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MimeTypeFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_MimeTypeFieldNumber.htm" />
+  <HelpKINode Title="MuxingApp property" Url="html/P_Hermes_Media_WebMInfo_MuxingApp.htm" />
+  <HelpKINode Title="OnConnected method">
+    <HelpKINode Title="BaseConnection.OnConnected Method " Url="html/Overload_Hermes_Connection_BaseConnection_OnConnected.htm" />
+    <HelpKINode Title="DefaultConnection(TCommunication).OnConnected Method " Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnConnected.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnDisconnected method">
+    <HelpKINode Title="BaseConnection.OnDisconnected Method " Url="html/Overload_Hermes_Connection_BaseConnection_OnDisconnected.htm" />
+    <HelpKINode Title="DefaultConnection(TCommunication).OnDisconnected Method " Url="html/Overload_Hermes_Connection_DefaultConnection_1_OnDisconnected.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OneToManyCommunication class">
+    <HelpKINode Title="OneToManyCommunication Class" Url="html/T_Hermes_Communication_OneToManyCommunication.htm" />
+    <HelpKINode Title="about OneToManyCommunication class" Url="html/T_Hermes_Communication_OneToManyCommunication.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_OneToManyCommunication__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Communication_OneToManyCommunication.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_OneToManyCommunication.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_OneToManyCommunication.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OneToManyCommunication.MaxConnections property" Url="html/P_Hermes_Communication_OneToManyCommunication_MaxConnections.htm" />
+  <HelpKINode Title="OneToManyCommunication.OneToManyCommunication constructor" Url="html/M_Hermes_Communication_OneToManyCommunication__ctor.htm" />
+  <HelpKINode Title="OneToManyCommunication.Status property" Url="html/P_Hermes_Communication_OneToManyCommunication_Status.htm" />
+  <HelpKINode Title="OneToOneCommunication class">
+    <HelpKINode Title="OneToOneCommunication Class" Url="html/T_Hermes_Communication_OneToOneCommunication.htm" />
+    <HelpKINode Title="about OneToOneCommunication class" Url="html/T_Hermes_Communication_OneToOneCommunication.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Communication_OneToOneCommunication__ctor.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Communication_OneToOneCommunication.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Communication_OneToOneCommunication.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Communication_OneToOneCommunication.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OneToOneCommunication.MaxConnections property" Url="html/P_Hermes_Communication_OneToOneCommunication_MaxConnections.htm" />
+  <HelpKINode Title="OneToOneCommunication.OneToOneCommunication constructor" Url="html/M_Hermes_Communication_OneToOneCommunication__ctor.htm" />
+  <HelpKINode Title="OneToOneCommunication.Status property" Url="html/P_Hermes_Communication_OneToOneCommunication_Status.htm" />
+  <HelpKINode Title="OnReceived method" Url="html/M_Hermes_Connection_BaseConnection_OnReceived.htm" />
+  <HelpKINode Title="OnReceivedAudio method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedAudio.htm" />
+  <HelpKINode Title="OnReceivedBinary method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedBinary.htm" />
+  <HelpKINode Title="OnReceivedControl method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedControl.htm" />
+  <HelpKINode Title="OnReceivedText method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedText.htm" />
+  <HelpKINode Title="OnReceivedVideo method" Url="html/M_Hermes_Connection_BaseConnection_OnReceivedVideo.htm" />
+  <HelpKINode Title="OnReconnected method" Url="html/Overload_Hermes_Connection_BaseConnection_OnReconnected.htm" />
+  <HelpKINode Title="Origin property" Url="html/P_Hermes_Protoc_Messages_Message_Origin.htm" />
+  <HelpKINode Title="OriginConnection property" Url="html/P_Hermes_Connection_BaseConnection_OriginConnection.htm" />
+  <HelpKINode Title="OriginFieldNumber field" Url="html/F_Hermes_Protoc_Messages_Message_OriginFieldNumber.htm" />
+  <HelpKINode Title="Parser property">
+    <HelpKINode Title="Message.Parser Property " Url="html/P_Hermes_Protoc_Messages_Message_Parser.htm" />
+    <HelpKINode Title="MessageCollection.Parser Property " Url="html/P_Hermes_Protoc_Messages_MessageCollection_Parser.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ready field" Url="html/F_Hermes_Communication_Status_Ready.htm" />
+  <HelpKINode Title="RemoveConnection method">
+    <HelpKINode Title="BaseCommunication.RemoveConnection Method " Url="html/M_Hermes_Communication_BaseCommunication_RemoveConnection.htm" />
+    <HelpKINode Title="ICommunication.RemoveConnection Method " Url="html/M_Hermes_Communication_ICommunication_RemoveConnection.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RemoveConnectionCallback property">
+    <HelpKINode Title="BaseCommunication.RemoveConnectionCallback Property " Url="html/P_Hermes_Communication_BaseCommunication_RemoveConnectionCallback.htm" />
+    <HelpKINode Title="ICommunication.RemoveConnectionCallback Property " Url="html/P_Hermes_Communication_ICommunication_RemoveConnectionCallback.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequestMediaHeader field" Url="html/F_Hermes_Control_Action_RequestMediaHeader.htm" />
+  <HelpKINode Title="RequestMediaHeaderControlObject class">
+    <HelpKINode Title="RequestMediaHeaderControlObject Class" Url="html/T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+    <HelpKINode Title="about RequestMediaHeaderControlObject class" Url="html/T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_RequestMediaHeaderControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_RequestMediaHeaderControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequestMediaHeaderControlObject.MediaHeader property" Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_MediaHeader.htm" />
+  <HelpKINode Title="RequestMediaHeaderControlObject.RequestMediaHeaderControlObject constructor" Url="html/M_Hermes_Control_RequestMediaHeaderControlObject__ctor.htm" />
+  <HelpKINode Title="RequestMediaHeaderControlObject.StreamId property" Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_StreamId.htm" />
+  <HelpKINode Title="RequestStreamId field" Url="html/F_Hermes_Control_Action_RequestStreamId.htm" />
+  <HelpKINode Title="RequestStreamIdAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_RequestStreamIdAllowed.htm" />
+  <HelpKINode Title="RequestStreamIdControlObject class">
+    <HelpKINode Title="RequestStreamIdControlObject Class" Url="html/T_Hermes_Control_RequestStreamIdControlObject.htm" />
+    <HelpKINode Title="about RequestStreamIdControlObject class" Url="html/T_Hermes_Control_RequestStreamIdControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_RequestStreamIdControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_RequestStreamIdControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_RequestStreamIdControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RequestStreamIdControlObject.RequestStreamIdControlObject constructor" Url="html/M_Hermes_Control_RequestStreamIdControlObject__ctor.htm" />
+  <HelpKINode Title="RequestStreamIdControlObject.StreamId property" Url="html/P_Hermes_Control_RequestStreamIdControlObject_StreamId.htm" />
+  <HelpKINode Title="SegmentHeader property" Url="html/P_Hermes_Media_WebMHelper_SegmentHeader.htm" />
+  <HelpKINode Title="SendAudioMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendAudioMessage.htm" />
+  <HelpKINode Title="SendBinaryMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendBinaryMessage.htm" />
+  <HelpKINode Title="SendControlMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendControlMessage.htm" />
+  <HelpKINode Title="SendTextMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendTextMessage.htm" />
+  <HelpKINode Title="SendVideoMessage method" Url="html/Overload_Hermes_Connection_BaseConnection_SendVideoMessage.htm" />
+  <HelpKINode Title="SessionId property">
+    <HelpKINode Title="BaseCommunication.SessionId Property " Url="html/P_Hermes_Communication_BaseCommunication_SessionId.htm" />
+    <HelpKINode Title="ConnectControlObject.SessionId Property " Url="html/P_Hermes_Control_ConnectControlObject_SessionId.htm" />
+    <HelpKINode Title="ConnectionInfo.SessionId Property " Url="html/P_Hermes_Connection_ConnectionInfo_SessionId.htm" />
+    <HelpKINode Title="ICommunication.SessionId Property " Url="html/P_Hermes_Communication_ICommunication_SessionId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetConstraints method" Url="html/M_Hermes_Communication_CommunicationConstraint_SetConstraints.htm" />
+  <HelpKINode Title="SetMasterConstraint method">
+    <HelpKINode Title="BaseCommunication.SetMasterConstraint Method " Url="html/M_Hermes_Communication_BaseCommunication_SetMasterConstraint.htm" />
+    <HelpKINode Title="ICommunication.SetMasterConstraint Method " Url="html/M_Hermes_Communication_ICommunication_SetMasterConstraint.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetMediaStreamHeader method">
+    <HelpKINode Title="BaseCommunication.SetMediaStreamHeader Method " Url="html/M_Hermes_Communication_BaseCommunication_SetMediaStreamHeader.htm" />
+    <HelpKINode Title="ICommunication.SetMediaStreamHeader Method " Url="html/M_Hermes_Communication_ICommunication_SetMediaStreamHeader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SetSlaveConstraint method">
+    <HelpKINode Title="BaseCommunication.SetSlaveConstraint Method " Url="html/M_Hermes_Communication_BaseCommunication_SetSlaveConstraint.htm" />
+    <HelpKINode Title="ICommunication.SetSlaveConstraint Method " Url="html/M_Hermes_Communication_ICommunication_SetSlaveConstraint.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SlaveConstraint property">
+    <HelpKINode Title="BaseCommunication.SlaveConstraint Property " Url="html/P_Hermes_Communication_BaseCommunication_SlaveConstraint.htm" />
+    <HelpKINode Title="ICommunication.SlaveConstraint Property " Url="html/P_Hermes_Communication_ICommunication_SlaveConstraint.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Status class">
+    <HelpKINode Title="Status Class" Url="html/T_Hermes_Communication_Status.htm" />
+    <HelpKINode Title="about Status class" Url="html/T_Hermes_Communication_Status.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hermes_Communication_Status.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Status property">
+    <HelpKINode Title="BaseCommunication.Status Property " Url="html/P_Hermes_Communication_BaseCommunication_Status.htm" />
+    <HelpKINode Title="ConnectControlObject.Status Property " Url="html/P_Hermes_Control_ConnectControlObject_Status.htm" />
+    <HelpKINode Title="ICommunication.Status Property " Url="html/P_Hermes_Communication_ICommunication_Status.htm" />
+    <HelpKINode Title="ManyToManyCommunication.Status Property " Url="html/P_Hermes_Communication_ManyToManyCommunication_Status.htm" />
+    <HelpKINode Title="OneToManyCommunication.Status Property " Url="html/P_Hermes_Communication_OneToManyCommunication_Status.htm" />
+    <HelpKINode Title="OneToOneCommunication.Status Property " Url="html/P_Hermes_Communication_OneToOneCommunication_Status.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Status.Disconnected field" Url="html/F_Hermes_Communication_Status_Disconnected.htm" />
+  <HelpKINode Title="Status.Full field" Url="html/F_Hermes_Communication_Status_Full.htm" />
+  <HelpKINode Title="Status.Ready field" Url="html/F_Hermes_Communication_Status_Ready.htm" />
+  <HelpKINode Title="Status.Waiting field" Url="html/F_Hermes_Communication_Status_Waiting.htm" />
+  <HelpKINode Title="StopStream field" Url="html/F_Hermes_Control_Action_StopStream.htm" />
+  <HelpKINode Title="StopStream method">
+    <HelpKINode Title="BaseCommunication.StopStream Method " Url="html/M_Hermes_Communication_BaseCommunication_StopStream.htm" />
+    <HelpKINode Title="ICommunication.StopStream Method " Url="html/M_Hermes_Communication_ICommunication_StopStream.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopStreamControlObject class">
+    <HelpKINode Title="StopStreamControlObject Class" Url="html/T_Hermes_Control_StopStreamControlObject.htm" />
+    <HelpKINode Title="about StopStreamControlObject class" Url="html/T_Hermes_Control_StopStreamControlObject.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Control_StopStreamControlObject__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Control_StopStreamControlObject.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Control_StopStreamControlObject.htm" />
+  </HelpKINode>
+  <HelpKINode Title="StopStreamControlObject.StopStreamControlObject constructor" Url="html/M_Hermes_Control_StopStreamControlObject__ctor.htm" />
+  <HelpKINode Title="StopStreamControlObject.StreamId property" Url="html/P_Hermes_Control_StopStreamControlObject_StreamId.htm" />
+  <HelpKINode Title="StreamId property">
+    <HelpKINode Title="RequestMediaHeaderControlObject.StreamId Property " Url="html/P_Hermes_Control_RequestMediaHeaderControlObject_StreamId.htm" />
+    <HelpKINode Title="RequestStreamIdControlObject.StreamId Property " Url="html/P_Hermes_Control_RequestStreamIdControlObject_StreamId.htm" />
+    <HelpKINode Title="StopStreamControlObject.StreamId Property " Url="html/P_Hermes_Control_StopStreamControlObject_StreamId.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Text enumeration member">
+    <HelpKINode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    <HelpKINode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TextDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_TextDataTypeAllowed.htm" />
+  <HelpKINode Title="TimecodeScale property" Url="html/P_Hermes_Media_WebMInfo_TimecodeScale.htm" />
+  <HelpKINode Title="Title property" Url="html/P_Hermes_Media_WebMInfo_Title.htm" />
+  <HelpKINode Title="ToString method">
+    <HelpKINode Title="Message.ToString Method " Url="html/M_Hermes_Protoc_Messages_Message_ToString.htm" />
+    <HelpKINode Title="MessageCollection.ToString Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_ToString.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UniqueIdRangeStart field" Url="html/F_Hermes_Communication_BaseCommunication_UniqueIdRangeStart.htm" />
+  <HelpKINode Title="Video enumeration member">
+    <HelpKINode Title="DefaultStreamId Enumeration" Url="html/T_Hermes_Connection_DefaultStreamId.htm" />
+    <HelpKINode Title="Message.Types.DataType Enumeration" Url="html/T_Hermes_Protoc_Messages_Message_Types_DataType.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VideoDataTypeAllowed property" Url="html/P_Hermes_Communication_CommunicationConstraint_VideoDataTypeAllowed.htm" />
+  <HelpKINode Title="Waiting field" Url="html/F_Hermes_Communication_Status_Waiting.htm" />
+  <HelpKINode Title="WebMHelper class">
+    <HelpKINode Title="WebMHelper Class" Url="html/T_Hermes_Media_WebMHelper.htm" />
+    <HelpKINode Title="about WebMHelper class" Url="html/T_Hermes_Media_WebMHelper.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Media_WebMHelper__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Media_WebMHelper.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Media_WebMHelper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebMHelper.Data property" Url="html/P_Hermes_Media_WebMHelper_Data.htm" />
+  <HelpKINode Title="WebMHelper.GetWebMFileHeader method" Url="html/M_Hermes_Media_WebMHelper_GetWebMFileHeader.htm" />
+  <HelpKINode Title="WebMHelper.SegmentHeader property" Url="html/P_Hermes_Media_WebMHelper_SegmentHeader.htm" />
+  <HelpKINode Title="WebMHelper.WebMHelper constructor" Url="html/M_Hermes_Media_WebMHelper__ctor.htm" />
+  <HelpKINode Title="WebMInfo class">
+    <HelpKINode Title="WebMInfo Class" Url="html/T_Hermes_Media_WebMInfo.htm" />
+    <HelpKINode Title="about WebMInfo class" Url="html/T_Hermes_Media_WebMInfo.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Media_WebMInfo__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Media_WebMInfo.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Media_WebMInfo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebMInfo.DateUtc property" Url="html/P_Hermes_Media_WebMInfo_DateUtc.htm" />
+  <HelpKINode Title="WebMInfo.Duration property" Url="html/P_Hermes_Media_WebMInfo_Duration.htm" />
+  <HelpKINode Title="WebMInfo.MuxingApp property" Url="html/P_Hermes_Media_WebMInfo_MuxingApp.htm" />
+  <HelpKINode Title="WebMInfo.TimecodeScale property" Url="html/P_Hermes_Media_WebMInfo_TimecodeScale.htm" />
+  <HelpKINode Title="WebMInfo.Title property" Url="html/P_Hermes_Media_WebMInfo_Title.htm" />
+  <HelpKINode Title="WebMInfo.WebMInfo constructor" Url="html/M_Hermes_Media_WebMInfo__ctor.htm" />
+  <HelpKINode Title="WebMInfo.WritingApp property" Url="html/P_Hermes_Media_WebMInfo_WritingApp.htm" />
+  <HelpKINode Title="WebMSegmentHeader class">
+    <HelpKINode Title="WebMSegmentHeader Class" Url="html/T_Hermes_Media_WebMSegmentHeader.htm" />
+    <HelpKINode Title="about WebMSegmentHeader class" Url="html/T_Hermes_Media_WebMSegmentHeader.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hermes_Media_WebMSegmentHeader__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hermes_Media_WebMSegmentHeader.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hermes_Media_WebMSegmentHeader.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WebMSegmentHeader.Info property" Url="html/P_Hermes_Media_WebMSegmentHeader_Info.htm" />
+  <HelpKINode Title="WebMSegmentHeader.WebMSegmentHeader constructor" Url="html/M_Hermes_Media_WebMSegmentHeader__ctor.htm" />
+  <HelpKINode Title="WriteTo method">
+    <HelpKINode Title="Message.WriteTo Method " Url="html/M_Hermes_Protoc_Messages_Message_WriteTo.htm" />
+    <HelpKINode Title="MessageCollection.WriteTo Method " Url="html/M_Hermes_Protoc_Messages_MessageCollection_WriteTo.htm" />
+  </HelpKINode>
+  <HelpKINode Title="WritingApp property" Url="html/P_Hermes_Media_WebMInfo_WritingApp.htm" />
+</HelpKI>

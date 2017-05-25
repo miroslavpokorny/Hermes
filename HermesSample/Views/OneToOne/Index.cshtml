@@ -1,0 +1,252 @@
+﻿@{
+    ViewBag.Title = "Hermes OneToOne";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Hermes OneToOne</h1>
+
+<div id="alerts"></div>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" onclick="main.showModalCommunicationLink()"><span class="glyphicon glyphicon-link"></span> Show communication link</button>
+    <button id="button-share-video" type="button" class="btn btn-success"><span class="glyphicon glyphicon-facetime-video"></span> Share video</button>
+    <button id="button-unshare-video" type="button" class="btn btn-danger" style="display: none;"><span class="glyphicon glyphicon-facetime-video"></span> Unshare video</button>
+</div>
+<br/><br />
+<div class="row">
+    <div class="col-md-6">
+        <div style="min-width: 300px; min-height: 225px;">
+            <div style="display: table; max-height: 400px; width: 100%;">
+                <div style="display: table-cell; vertical-align: bottom;">
+                    <div id="div-video-received">
+                    </div>
+                    <div id="div-video-local" style="position: absolute; left: 20px; bottom: 20px; max-width: 33%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="div-chat" style="max-height: 400px; overflow-y: scroll;">
+        </div>
+    </div>
+    <div class="col-md-offset-6 col-md-6">
+        <div class="form-group">
+            <textarea class="form-control" id="textarea-chat" style="width: 100%; resize: none; max-width: 100%;" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <input class="col-md-6" type="file" id="input-chat-file">
+            <button class="col-md-3 btn btn-default" id="button-chat-file"><span class="glyphicon glyphicon-file"></span> Send file</button>
+            <button class="col-md-3 btn btn-default" id="button-chat-text"><span class="glyphicon glyphicon-envelope"></span> Send text</button>
+        </div>
+    </div>
+</div>
+
+<!--MODALS-->
+<div class="modal fade" id="modal-communication-link" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModal-label">Communication link</h4>
+            </div>
+            <div class="modal-body">
+                <p><a id="a-modal-communication-link"></a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-disconnect" tabindex="-1" role="dialog" aria-labelledby="myModal-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModal-label">Connection disconnected!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Connection was disconnected <a href="@Url.Action("Index", "OneToOne", new {id = ""})">click here </a> to start new communication!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    @if (ViewBag.SessionId != null)
+    {
+        <script type="text/javascript">
+        var SESSION_ID = "@ViewBag.SessionId";
+        </script>
+    }
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <!--POLYFILL required for EDGE browser-->
+    <script src="~/Scripts/text-encoder.js"></script>
+    <script src="~/Scripts/hermesJS.js"></script>
+    <script type="text/javascript">
+        function escapeHtml(text) {
+            var map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+
+            return text.replace(/[&<>"']/g, function (m) { return map[m]; });
+        }
+        var main = {};
+
+        main.run = function run() {
+
+            function setLinkModalCommunicationLink() {
+                var a = $("#a-modal-communication-link");
+                var url = window.location.protocol + "//" + window.location.host + "/OneToOne/Index/" + connection.sessionId;
+                a.attr("href", url);
+                a.html(url);
+            }
+
+            function onReady(event) {
+                setLinkModalCommunicationLink();
+                $("#modal-communication-link").modal("hide");
+            }
+
+            function onWaiting(event) {
+                setLinkModalCommunicationLink();
+                showModalCommunicationLink();
+            }
+
+            function onDisconnect() {
+                $("#modal-disconnect").modal("show");
+            }
+
+            function showModalCommunicationLink() {
+                $('#modal-communication-link').modal({
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                $("#modal-communication-link").modal("show");
+            }
+
+            main.showModalCommunicationLink = showModalCommunicationLink;
+
+            function displayInChat(content, htmlClass, htmlStyle) {
+                var chat = $("#div-chat");
+                var div = '<div class="panel ' + htmlClass + '"><div class="panel-body" style="' + htmlStyle + '">';
+                div += content + '</div></div>';
+                chat.append(div);
+                chat.scrollTop(chat.prop("scrollHeight"));
+            }
+
+            function displayTextChat(text, local) {
+                var data = escapeHtml(text.trim());
+                if (data === "") return;
+                data = data.replace(/\n/g, "</br>");
+                displayInChat(data, local ? 'panel-primary' : 'panel-default', "");
+            }
+
+            function displayFileChat(blob, local) {
+                if (blob.type.substring(0, "image".length) === "image") { 
+                    //handle image
+                    var img = '<img style="width: 100%;" src="' + window.URL.createObjectURL(blob) + '"/>';
+                    displayInChat(img, local ? 'panel-primary' : 'panel-default');
+                    return;
+                }
+                //non image data
+                var data = '<a href="' + window.URL.createObjectURL(blob) + '" target="_blank">';
+                data += "Type: " + blob.type + "</br> Size: " + blob.size + "</br> Click for download";
+                data += '</a>';
+                displayInChat(data, local ? 'panel-primary' : 'panel-default');
+            }
+
+            function displayAlert(text, type) {
+                var div = '<div class="alert fade in ';
+                div += type + ' alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+                div += text + '</div>'
+                $("#alerts").append(div);
+            }
+
+            var connection = new HermesJS.Connection.HermesConnection("/hermesOneToOne");
+            if (typeof SESSION_ID !== "undefined") { connection.sessionId = SESSION_ID; }
+            connection.logging = true;
+            connection.addEventListener("waiting", onWaiting);
+            connection.addEventListener("ready", onReady);
+            connection.addEventListener("full", function () { alert("Connection session is full!") });
+            connection.addEventListener("disconnect", onDisconnect);
+            var media = new HermesJS.Media.MediaHandler(connection);
+            media.logging = true;
+            connection.start();
+            
+
+            $("#button-chat-text").click(function() {
+                var textarea = $("#textarea-chat");
+                var data = textarea.val();
+                textarea.val("");
+                connection.sendText(data, 100);
+                displayTextChat(data, true);
+            });
+
+            connection.addReceivedEventListener(HermesJS.DataType.TEXT, function(event) {
+                displayTextChat(event.data, false);
+            }, 100);
+
+            $("#button-share-video").click(function() {
+                media.shareUserMedia(HermesJS.Media.ShareUserMediaConstraint.VIDEO_ONLY);
+            });
+
+            media.addEventListener("mediashared", function(event) {
+                btnShare = $("#button-share-video");
+                btnUnshare = $("#button-unshare-video");
+                btnShare.attr("style", "display: none");
+                btnUnshare.removeAttr("style");
+                var video = document.createElement("video");
+                video.src = window.URL.createObjectURL(event.localStream);
+                video.autoplay = true;
+                video.style = "width: 100%; transform: rotateY(180deg);";
+                $("#div-video-local").html(video);
+            });
+
+            $("#button-unshare-video").click(function() {
+                media.unshareUserMedia();
+                btnShare = $("#button-share-video");
+                btnUnshare = $("#button-unshare-video");
+                btnUnshare.attr("style", "display: none");
+                btnShare.removeAttr("style");
+            });
+
+            media.addEventListener("newstream", function(event) {
+                event.mediaElement.autoplay = true;
+                event.mediaElement.style = "width: 100%;";
+                $("#div-video-received").html(event.mediaElement);
+            });
+
+            $("#button-chat-file").click(function() {
+                var files = $("#input-chat-file")[0].files;
+                for (var i = 0; i < files.length; i++) {
+                    if (files[i].size > 10 * 1024 * 1024) { //Max 10MB 
+                        displayAlert("Max size of file is limited to 10MB!", "alert-danger");
+                        continue;
+                    }
+                    var reader = new FileReader();
+                    var file = files[i];
+                    reader.onload = function (event) {
+                        displayFileChat(file, true);
+                        connection.sendBinary(new Uint8Array(event.target.result), 200, file.type);
+                    }
+                    reader.readAsArrayBuffer(files[i]);
+                }
+            });
+
+            connection.addReceivedEventListener(HermesJS.DataType.BINARY, function(event) {
+                displayFileChat(new Blob([event.data], { type: event.mimeType }), false);
+            }, 200);
+        }
+        main.run();
+    </script>
+}

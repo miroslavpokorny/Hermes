@@ -1,0 +1,157 @@
+﻿@{
+    ViewBag.Title = "Hermes OneToMany";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Hermes OneToMany</h1>
+
+<div class="well" id="div-communication-link">
+    <a id="a-div-communication-link"></a>
+</div>
+
+@if (ViewBag.SessionId == null)
+{
+    <div id="div-select-media" class="form-group">
+        <label class="control-label">
+            Select media: 
+            <select id="select-media" class="form-control">
+                <option value="1">Audio only</option>
+                <option value="2" selected="selected">Video only</option>
+                <option value="3">Audio and video</option>
+            </select>
+        </label>
+    </div>
+    
+    <div class="btn-group" role="group">
+        <button id="button-share-media" type="button" class="btn btn-success"><span class="glyphicon glyphicon-facetime-video"></span> Start sharing</button>
+        <button style="display: none;" id="button-unshare-media" type="button" class="btn btn-danger"><span class="glyphicon glyphicon-facetime-video"></span> Stop sharing</button>
+    </div>
+    <br/>
+    <br/>
+}
+else
+{
+    <script type="text/javascript">
+        var SESSION_ID = "@ViewBag.SessionId";
+    </script>
+}
+
+<div id="video-container">
+    <!--<video controls="" style="width:100%"></video>-->
+</div>
+
+<div class="alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>NOTE:</strong> Current web browsers (Firefox 51, Chrome 56, Opera 43) could have performance/decode problems when audio is used (it could take more time to initialize audio in receiver browsers, if sharing started before opening these browser)...
+</div>
+
+<!--MODALS-->
+
+<div class="modal fade" id="modal-disconnect" tabindex="-1" role="dialog" aria-labelledby="modal-disconnect-label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-disconnect-label">Disconnected!</h4>
+            </div>
+            <div class="modal-body">
+                <p>Connection has disconnected! You lose connection with server, or streaming has ended.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <!--POLYFILL required for EDGE browser-->
+    <script src="~/Scripts/text-encoder.js"></script>
+    <script src="~/Scripts/HermesJS.js"></script>
+    <script type="text/javascript">
+        function main() {
+            function setLinkDivCommunicationLink() {
+                var a = $("#a-div-communication-link");
+                var url = window.location.protocol + "//" + window.location.host + "/OneToMany/Index/" + connection.sessionId;
+                a.attr("href", url);
+                a.html(url);
+            }
+
+            function onWaiting() {
+                setLinkDivCommunicationLink();
+            }
+
+            function onReady() {
+                setLinkDivCommunicationLink();
+            }
+
+            function onDisconnect() {
+                $("#modal-disconnect").modal("show");
+            }
+
+            var connection = new HermesJS.Connection.HermesConnection("/hermesOneToMany");
+            connection.frequency = 150;
+            var media = new HermesJS.Media.MediaHandler(connection);
+            connection.logging = true;
+            media.logging = true;
+            if (typeof SESSION_ID !== "undefined") { connection.sessionId = SESSION_ID; }
+
+            connection.addEventListener("waiting", onWaiting);
+            connection.addEventListener("ready", onReady);
+            connection.addEventListener("disconnect", onDisconnect);
+
+            connection.start();
+
+            media.addEventListener("newstream", function (event) {
+                var mediaElement = event.mediaElement;
+                mediaElement.autoplay = true;
+                mediaElement.id = "received-media-" + event.streamId;
+                mediaElement.style = "width: 100%;";
+                if (mediaElement.tagName.toLowerCase() === "video") {
+                    mediaElement.poster = "@Url.Content("~/Content/default.gif")";
+                    mediaElement.controls = true;
+                } else if (mediaElement.tagName.toLowerCase() === "audio") {
+                    mediaElement.controls = true;
+                }
+                $("#video-container").html(mediaElement);
+            });
+
+            $("#button-share-media").click(function () {
+                $("#button-share-media").attr("style", "display: none;");
+                $("#button-unshare-media").removeAttr("style");
+                $("#div-select-media").attr("style", "display: none;");
+                var select = $("#select-media")[0];
+                var constraint;
+                switch (select.options[select.selectedIndex].value) {
+                    case "1":
+                        constraint = HermesJS.Media.ShareUserMediaConstraint.AUDIO_ONLY;
+                        break;
+                    case "3":
+                        constraint = HermesJS.Media.ShareUserMediaConstraint.AUDIO_AND_VIDEO;
+                        break;
+                    case "2":
+                    default:
+                        constraint = HermesJS.Media.ShareUserMediaConstraint.VIDEO_ONLY;
+                        break;
+                }
+
+                media.shareUserMedia(constraint);
+            });
+
+            $("#button-unshare-media").click(function () {
+                $("#button-unshare-media").attr("style", "display: none;");
+                $("#button-share-media").removeAttr("style");
+                $("#div-select-media").removeAttr("style");
+                media.unshareUserMedia();
+            });
+
+            media.addEventListener("mediashared", function (event) {
+                var p = '<p>Media shared!</p>';
+                $("video-container").html(p);
+            });
+        }
+        main();
+    </script>
+}

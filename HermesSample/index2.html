@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hermes tests</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<script src="Scripts/jquery-3.1.1.min.js"></script>
+<script src="Scripts/jquery.signalR-2.2.1.min.js"></script>
+<script src="hermes.js"></script>
+<script>
+    $(function() {
+        var id = prompt("SESSION_ID");
+
+        var connection = $.connection("/hermes", id == null ? "" : "SESSION_ID="+id);
+        var connected = false;
+        connection.start().done(function() {
+            console.log("Connected!");
+            connected = true;
+            var messages = new proto.hermes.MessageCollection();
+            var message = new proto.hermes.Message();
+            message.setId = 0;
+            message.setDatatype = message.CONTROL;
+            message.setData(btoa("HERMES:GET_SESSION_ID"));
+            messages.addMessages(message);
+            var binaryWriter = new jspb.BinaryWriter();
+            messages.serializeBinaryToWriter(binaryWriter);
+            connection.send(binaryWriter.getResultBase64String());
+        });
+        connection.received(function(data) {
+            var messages = proto.hermes.MessageCollection.deserializeBinary(data);
+            var list = messages.getMessagesList();
+            //var enc = String.fromCharCode.apply(null, list[0].getData());
+            //var dec = new TextDecoder("UTF-16LE");
+            var dec = new TextDecoder("UTF-8");
+            var dd = dec.decode(list[0].getData());
+            console.log(dd);
+
+            //var d = list[0].getData();
+            //console.log(enc);
+            console.log("Received");
+
+            var obj = JSON.parse(dd);
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

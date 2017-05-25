@@ -1,0 +1,50 @@
+﻿/**
+ * Copyright 2017 Miroslav Pokorný
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+using Hermes.Communication;
+
+namespace Hermes.Connection
+{
+    /// <summary>
+    /// Class containing info about current connection session, used as parameter in OnConnect, OnDisconnect, OnReceivedX methods
+    /// </summary>
+    public class ConnectionInfo
+    {
+        /// <summary>
+        /// Backing field for property SessionId, used only if property Communication is null
+        /// </summary>
+        private string _sessionId;
+
+        /// <summary>
+        /// ID of current session
+        /// </summary>
+        public string SessionId
+        {
+            get { return Communication != null ? Communication.SessionId : _sessionId; }
+            set { _sessionId = value; }
+        }
+
+        /// <summary>
+        /// Source connection ID
+        /// </summary>
+        public string ConnectionId { get; set; }
+
+        /// <summary>
+        /// Current communication session
+        /// </summary>
+        public ICommunication Communication { get; set; }
+    }
+}
