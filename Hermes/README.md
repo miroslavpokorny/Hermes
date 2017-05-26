@@ -16,7 +16,7 @@ New communication template could be created by implementing *Communication.IComm
 
 **Note:** Instances of communication are used to store information about communication session (IDs of clients, etc...).
 
-###Connection
+### Connection
 The connection is established using SignalR persistent connection. *Connection.BaseConnection* abstract class providing methods for handling and sending data through. The new connection could be created by inheriting from this class or using a *Connection.DefaultConnection* generic class which takes *Communication.ICommunication* as a generic parameter. DefaultConnection behavior is simple to check if data processing is allowed and resending of data to other clients participating in the same communication session.
 
 ## Usage
